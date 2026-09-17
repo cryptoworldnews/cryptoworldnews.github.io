@@ -1,0 +1,10 @@
+# Crypto Operations Desk
+
+> Independent crypto news for validators and node operators, covering protocol changes, network reliability, staking economics and market infrastructure.
+
+Coverage: Protocol Upgrades, Validator Economics, Network Reliability, Market Infrastructure, Infrastructure Policy.
+
+## Key pages
+- [Homepage](https://cryptoworldnews.github.io/): latest reporting and analysis.
+- [About](https://cryptoworldnews.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://cryptoworldnews.github.io/archive/): everything published.

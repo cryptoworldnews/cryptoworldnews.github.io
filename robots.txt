@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cryptoworldnews.github.io/sitemap.xml
