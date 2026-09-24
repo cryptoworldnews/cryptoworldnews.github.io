@@ -1,8 +1,6 @@
-# Crypto Daily
+# Blockchain Post
 
-> Independent reporting on crypto markets, protocols, companies and regulation, with clear explanations of what changed, how it works and why it matters.
-
-Coverage: Markets and Trading, Protocols and Infrastructure, Companies and Funding, Policy and Regulation, Security and Exploits.
+> Independent crypto news that explains how protocols, exchanges, stablecoins and regulation actually work, step by step, before telling you what changed.
 
 ## Key pages
 - [Homepage](https://cryptoworldnews.github.io/): latest reporting and analysis.
