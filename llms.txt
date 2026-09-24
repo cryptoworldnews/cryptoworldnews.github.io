@@ -1,6 +1,6 @@
-# Blockchain Post
+# Crypto Bulletin
 
-> Independent crypto news that explains how protocols, exchanges, stablecoins and regulation actually work, step by step, before telling you what changed.
+> Crypto Bulletin reports crypto news: exchanges, protocols, stablecoins, regulation, network upgrades, security incidents and the market moves around them.
 
 ## Key pages
 - [Homepage](https://cryptoworldnews.github.io/): latest reporting and analysis.
