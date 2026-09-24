@@ -1,6 +1,6 @@
-# Crypto Bulletin
+# Merkle Street
 
-> Crypto Bulletin reports crypto news: exchanges, protocols, stablecoins, regulation, network upgrades, security incidents and the market moves around them.
+> Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades.
 
 ## Key pages
 - [Homepage](https://cryptoworldnews.github.io/): latest reporting and analysis.
