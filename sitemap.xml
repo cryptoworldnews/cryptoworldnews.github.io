@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://cryptoworldnews.github.io/</loc><lastmod>2026-09-29</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://cryptoworldnews.github.io/how-thin-liquidity-distorts-a-bsc-tokens-market-cap/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoworldnews.github.io/check-a-bsc-token-contract-before-you-swap/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoworldnews.github.io/how-to-track-cost-basis-across-a-crypto-bridge/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://cryptoworldnews.github.io/moving-mantle-sale-proceeds-to-ethereum-for-a-tax-reserve/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -36,4 +37,5 @@
 <url><loc>https://cryptoworldnews.github.io/privacy/</loc><priority>0.3</priority></url>
 <url><loc>https://cryptoworldnews.github.io/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://cryptoworldnews.github.io/page/3/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://cryptoworldnews.github.io/page/4/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
