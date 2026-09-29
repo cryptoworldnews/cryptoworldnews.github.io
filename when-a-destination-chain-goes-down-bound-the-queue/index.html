@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bound Cross-Chain Queues During Destination Outages</title>
+<meta name="description" content="When a destination chain stalls, a bounded, ordered message queue limits congestion while preserving retries, clear status and safe recovery for cross-chain users.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="When a Destination Chain Goes Down, Bound the Queue">
+<meta property="og:description" content="When a destination chain stalls, a bounded, ordered message queue limits congestion while preserving retries, clear status and safe recovery for cross-chain users.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/when-a-destination-chain-goes-down-bound-the-queue-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="When a Destination Chain Goes Down, Bound the Queue"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="When a Destination Chain Goes Down, Bound the Queue">
+<meta name="twitter:description" content="When a destination chain stalls, a bounded, ordered message queue limits congestion while preserving retries, clear status and safe recovery for cross-chain users.">
+<meta property="article:published_time" content="2026-09-29T23:09:27+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/#webpage",
+      "url": "https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/",
+      "name": "Bound Cross-Chain Queues During Destination Outages",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/#article",
+      "headline": "When a Destination Chain Goes Down, Bound the Queue",
+      "isAccessibleForFree": true,
+      "description": "When a destination chain stalls, a bounded, ordered message queue limits congestion while preserving retries, clear status and safe recovery for cross-chain users.",
+      "datePublished": "2026-09-29T23:09:27+00:00",
+      "dateModified": "2026-09-29T23:09:27+00:00",
+      "url": "https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 632,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/covers/when-a-destination-chain-goes-down-bound-the-queue.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "When a Destination Chain Goes Down, Bound the Queue",
+          "item": "https://cryptoworldnews.github.io/when-a-destination-chain-goes-down-bound-the-queue/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">When a Destination Chain Goes Down, Bound the Queue</h1>
+<p class="s51c83d6">When a destination chain stalls, a bounded, ordered message queue limits congestion while preserving retries, clear status and safe recovery for cross-chain users.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-09-29T23:09:27+00:00">Sep 29, 2026</time><span class="s31cfcda">#5478db</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/when-a-destination-chain-goes-down-bound-the-queue.jpg" alt="Abstract cover artwork" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>When a destination chain goes down, the app should cap the messages waiting for it and keep each accepted message traceable. A typical cross-chain transfer begins when a contract on the source chain emits a message. A verifier checks that event under the protocol’s security rules. A relayer then submits the verified message to a contract on the destination chain, which runs the requested action. If that chain stops producing blocks or its transaction endpoint becomes unavailable, submission or execution pauses. The source transaction may already be final, so the assets or instruction can remain in flight.</p>
+
+<p>The waiting work may sit in a relayer’s database, in protocol contracts, or in both; there is no single queue design shared by every omnichain app. For a closer look at <a href="https://telegra.ph/How-Do-You-Use-Omnichain-Apps-and-Assets-09-29" rel="noopener">how omnichain apps move assets</a>, see the separate explainer. Here, the key distinction is between a message that has not been delivered and one that reached the destination but failed during execution. The first needs delivery to resume. The second may need a retry after the cause, such as a contract revert, is fixed.</p>
+
+<h2>What happens to a cross-chain message during an outage?</h2>
+
+<p>The message waits at the stage that cannot proceed, and its status should say which stage that is. A relayer can detect the source event and record its identifier even when the destination is offline. It can retry later, but it should not report success until the destination contract has executed the message. A destination outage therefore creates delay, not an automatic cancellation.</p>
+
+<p>Think of the queue as a waiting room with a fixed number of seats. If arrivals continue while service stops, the room fills; a larger room only postpones the limit. Each message needs a stable identifier, an ordering rule where order matters, and a recorded outcome. The app should also make clear whether the source action is final, pending, or failed. These details stop a delayed transfer from looking like a completed one.</p>
+
+<h2>How should an app bound its message queue?</h2>
+
+<p>Set limits on accepted backlog and on how quickly messages are submitted for execution. Apply limits per route or sender so one busy source cannot consume the whole capacity. A practical policy defines:</p>
+
+<ul>
+<li>A maximum pending count or total payload size.</li>
+<li>A submission rate that rises gradually after the destination recovers.</li>
+<li>A maximum age that triggers review or a documented recovery path.</li>
+<li>A visible outcome for new requests when the queue is full.</li>
+</ul>
+
+<p>Where possible, reject or pause new requests before committing the source-side action. A sudden outage can still happen after a request is accepted, so the app needs a bounded backlog and a clear full-queue response. Do not silently drop accepted messages when a limit is reached. Keep them recorded, stop admitting more, and explain how users can check their status. If messages carry different amounts or execution costs, count those too; a message-count limit alone may not bound the work.</p>
+
+<h2>How can users and app teams recover safely?</h2>
+
+<p>Resume delivery in controlled batches, then watch destination execution and queue depth before increasing the rate. The app should retry messages using their original identifiers and make execution safe against duplicate submissions. If messages must run in order, a failed earlier message may hold back later ones on that route; if they are independent, separate lanes can prevent that blockage.</p>
+
+<p>Users should check the message status before sending again. A source transaction that succeeded may still be waiting for destination execution, and a second request could repeat the intended action. The app should offer a support or recovery path for messages that age past their normal window, with the outcome stated plainly. The sound default is to preserve every accepted message, cap new arrivals, and resume only as fast as the destination can execute them.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/omnichain-state-starts-with-the-consistency-you-need/">Omnichain State Starts With the Consistency You Need</a></li>
+    <li><a href="/why-a-treasury-route-goes-missing-and-how-to-trace-it/">Why a Treasury Route Goes Missing and How to Trace It</a></li>
+    <li><a href="/how-to-compare-cross-chain-swap-routes-by-total-cost/">How to Compare Cross-Chain Swap Routes by Total Cost</a></li>
+    <li><a href="/why-the-same-token-has-different-versions-on-different-chains/">Why the Same Token Has Different Versions on Different Chains</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">An independent outlet. Nothing here is financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
