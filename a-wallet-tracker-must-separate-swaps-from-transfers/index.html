@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wallet tracking: separate buys from transfers</title>
+<meta name="description" content="A wallet balance shows what arrived, not why; trace token events, swap legs and sender paths to separate purchases from transfers with fewer false reads.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="A Wallet Tracker Must Separate Swaps From Transfers">
+<meta property="og:description" content="A wallet balance shows what arrived, not why; trace token events, swap legs and sender paths to separate purchases from transfers with fewer false reads.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/a-wallet-tracker-must-separate-swaps-from-transfers-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A Wallet Tracker Must Separate Swaps From Transfers"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Wallet Tracker Must Separate Swaps From Transfers">
+<meta name="twitter:description" content="A wallet balance shows what arrived, not why; trace token events, swap legs and sender paths to separate purchases from transfers with fewer false reads.">
+<meta property="article:published_time" content="2026-09-30T09:45:56+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/#webpage",
+      "url": "https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/",
+      "name": "Wallet tracking: separate buys from transfers",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/#article",
+      "headline": "A Wallet Tracker Must Separate Swaps From Transfers",
+      "isAccessibleForFree": true,
+      "description": "A wallet balance shows what arrived, not why; trace token events, swap legs and sender paths to separate purchases from transfers with fewer false reads.",
+      "datePublished": "2026-09-30T09:45:56+00:00",
+      "dateModified": "2026-09-30T09:45:56+00:00",
+      "url": "https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 620,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/covers/a-wallet-tracker-must-separate-swaps-from-transfers.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A Wallet Tracker Must Separate Swaps From Transfers",
+          "item": "https://cryptoworldnews.github.io/a-wallet-tracker-must-separate-swaps-from-transfers/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">A Wallet Tracker Must Separate Swaps From Transfers</h1>
+<p class="s51c83d6">A wallet balance shows what arrived, not why; trace token events, swap legs and sender paths to separate purchases from transfers with fewer false reads.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-09-30T09:45:56+00:00">Sep 30, 2026</time><span class="s31cfcda">#053fbd</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/a-wallet-tracker-must-separate-swaps-from-transfers.jpg" alt="Abstract cover artwork" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>To tell whether a wallet bought a token or received a transfer, trace the transaction’s token movements and identify what the wallet gave up in return. A buy usually involves a swap: the wallet sends one asset into a decentralised exchange contract and receives another. A transfer moves tokens from one address to another without that exchange of assets. The wallet’s balance records the result, but the transaction record shows the path.</p>
+
+<p>Start with the transaction, not the balance chart. Check the wallet address, the token contract and the chain, then open the transaction details. Look at the list of token transfers, which records assets moving between addresses, and the event logs, which record actions emitted by contracts. A token arriving alone is not enough to call it a buy. For background on how charting and swap views fit together, <a href="https://defiledger-6f4.pages.dev/poocoin-when-to-use-charts-tracking-or-swaps/" rel="noopener">Poocoin’s guide to charts, wallet tracking and swaps</a> covers the distinction in more detail.</p>
+
+<h2>What does a token buy look like on-chain?</h2>
+
+<p>A buy usually leaves evidence of an exchange in the same transaction. The wallet, or a contract acting for it, sends an asset such as a stablecoin or wrapped native token towards a liquidity pool or swap route. The route returns the purchased token to the wallet. A decentralised exchange router may split the trade across several pools, so the wallet can interact with a router rather than directly with the pool.</p>
+
+<p>Read the movements as a sequence. Find the outgoing asset, follow it through the contracts, then confirm that the wallet received the token it was seeking. Gas is a separate network fee paid to process the transaction; it is not the purchase payment. Some routes also wrap or unwrap a native coin, or pass through an aggregator, so the sender and recipient shown on a single transfer line may be contracts rather than the trader.</p>
+
+<h2>How can you spot a transfer instead?</h2>
+
+<p>A transfer usually shows the token moving from a sender address to the tracked wallet, with no matching swap that exchanges another asset for it. The sender might be another person, a wallet the same owner controls, a distribution contract, or a bridge. The record establishes that tokens arrived; it does not establish why they were sent or who ultimately controls the sender.</p>
+
+<p>Use these checks before labelling the activity:</p>
+
+<ul>
+<li>Compare the transaction’s incoming and outgoing token movements.</li>
+<li>Check whether a swap contract or route handled an exchange.</li>
+<li>Follow the sender address when the token arrived without a swap.</li>
+<li>Check for a bridge or wrapping step before treating contract movements as a trade.</li>
+</ul>
+
+<p>Some transactions combine actions, and tokens can be transferred as part of a larger contract call. A transfer event alone does not rule out a swap elsewhere in the same transaction. Likewise, a wallet can receive tokens from a purchase routed through several contracts. Classify the full transaction, not one line in its event list.</p>
+
+<h2>What should a wallet tracker count as a buy?</h2>
+
+<p>A tracker should count a buy when the transaction shows the wallet exchanging value for the token, and keep a plain receipt in a separate transfer category. That rule is more reliable than treating every incoming token as a purchase. It also avoids mistaking a wallet reshuffle for new demand when the same owner moves tokens between addresses.</p>
+
+<p>For a quick review, record the transaction link, the amount sent, the amount received and the route or sender involved. If the exchange is unclear, label it as an unclassified receipt until you can trace the other movements. A wallet tracker is a view of on-chain activity, not proof of a person’s intent. The useful distinction is concrete: a buy includes an exchange; a transfer records tokens changing addresses.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/how-to-swap-for-a-tron-launchpad-entry-token/">How to Swap for a TRON Launchpad Entry Token</a></li>
+    <li><a href="/how-a-tron-swap-moves-tokens-from-your-tron-wallet/">How a tron swap moves tokens from your TRON wallet</a></li>
+    <li><a href="/choose-the-xmr-to-evm-route-before-you-send/">Choose the XMR-to-EVM Route Before You Send</a></li>
+    <li><a href="/what-one-to-one-xmr-redemption-actually-returns/">What One-to-One XMR Redemption Actually Returns</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">An independent outlet. Nothing here is financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
