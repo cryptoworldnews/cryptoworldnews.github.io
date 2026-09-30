@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manta Bridge Withdrawal Reconciliation Explained</title>
+<meta name="description" content="A Manta Bridge withdrawal is reconciled by matching its Manta Pacific initiation to the later Ethereum proof and claim, not by waiting for one transfer hash.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Manta Bridge Withdrawal Reconciliation Works">
+<meta property="og:description" content="A Manta Bridge withdrawal is reconciled by matching its Manta Pacific initiation to the later Ethereum proof and claim, not by waiting for one transfer hash.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/how-manta-bridge-withdrawal-reconciliation-works-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Manta Bridge Withdrawal Reconciliation Works"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Manta Bridge Withdrawal Reconciliation Works">
+<meta name="twitter:description" content="A Manta Bridge withdrawal is reconciled by matching its Manta Pacific initiation to the later Ethereum proof and claim, not by waiting for one transfer hash.">
+<meta property="article:published_time" content="2026-09-30T09:56:35+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/#webpage",
+      "url": "https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/",
+      "name": "Manta Bridge Withdrawal Reconciliation Explained",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/#article",
+      "headline": "How Manta Bridge Withdrawal Reconciliation Works",
+      "isAccessibleForFree": true,
+      "description": "A Manta Bridge withdrawal is reconciled by matching its Manta Pacific initiation to the later Ethereum proof and claim, not by waiting for one transfer hash.",
+      "datePublished": "2026-09-30T09:56:35+00:00",
+      "dateModified": "2026-09-30T09:56:35+00:00",
+      "url": "https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 501,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/covers/how-manta-bridge-withdrawal-reconciliation-works.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Manta Bridge Withdrawal Reconciliation Works",
+          "item": "https://cryptoworldnews.github.io/how-manta-bridge-withdrawal-reconciliation-works/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">How Manta Bridge Withdrawal Reconciliation Works</h1>
+<p class="s51c83d6">A Manta Bridge withdrawal is reconciled by matching its Manta Pacific initiation to the later Ethereum proof and claim, not by waiting for one transfer hash.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-09-30T09:56:35+00:00">Sep 30, 2026</time><span class="s31cfcda">#01952e</span><span>2 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/how-manta-bridge-withdrawal-reconciliation-works.jpg" alt="Abstract cover artwork" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>A Manta Bridge withdrawal is reconciled by matching the Manta Pacific request to its proof and final release on Ethereum. The first transaction starts an exit; it does not put funds in the Ethereum wallet. The bridge records a message on Manta Pacific, makes that state available for proof, then uses a separate Ethereum transaction to release the asset.</p>
+
+<h2>What happens after a withdrawal starts?</h2>
+<p>The first step is a transaction on Manta Pacific. It requests the withdrawal and records the details needed to identify it, including the sender, destination, asset and amount. The Manta Pacific balance is debited or otherwise committed according to the asset route.</p>
+<p>Next, the rollup includes that transaction in its state. A proof or state commitment must reach Ethereum before the withdrawal can be proven there. The wallet then submits the proof on Ethereum. After the required waiting period, a final transaction completes the withdrawal and releases the corresponding funds.</p>
+<p>Think of the first hash as a receipt for opening a claim, not proof that the money has arrived. For a breakdown of the separate charges along the route, see <a href="https://dailynewscrypto.github.io/manta-bridge-fees-what-deposits-and-withdrawals-cost/" rel="noopener">Manta Bridge deposit and withdrawal fees</a>. Fees can arise at different steps because the transactions run on different networks.</p>
+
+<h2>How can I match a withdrawal across both chains?</h2>
+<p>Reconcile it by following the same withdrawal through the bridge history and both explorers. Start with the wallet that initiated the exit, then match the asset and amount. Use the L2 transaction hash to confirm the request on Manta Pacific. Look for the related proof and finalization transactions on Ethereum; their hashes will differ from the first one.</p>
+<p>The bridge history is the index that connects those steps. A useful record includes:</p>
+<ul>
+<li>The initiating wallet and intended Ethereum recipient.</li>
+<li>The asset and amount requested.</li>
+<li>The Manta Pacific transaction hash and its status.</li>
+<li>The linked Ethereum proof and finalization hashes, once available.</li>
+</ul>
+<p>A confirmed L2 transaction means the request was recorded. It does not mean the Ethereum balance has changed. The final Ethereum transaction is the evidence that the exit completed. The received amount can also differ from the requested amount if the route deducts a fee.</p>
+
+<h2>What should I do if the withdrawal still shows pending?</h2>
+<p>Check the stage before taking another action. If the L2 request succeeded but no proof is ready, the exit is waiting for rollup processing. If the proof was submitted, check whether the protocol’s waiting period has elapsed. If the bridge marks the exit ready to finalize, switch to Ethereum, connect the same wallet and submit the final transaction. That step needs Ethereum gas.</p>
+<p>If the interface and explorer disagree, trust the on-chain transaction status for the chain where that step occurred, then refresh the bridge history. Do not start a second withdrawal just because the first is not yet visible on Ethereum; a new request creates a separate exit and does not complete the existing one. Save each hash and check the recipient address before treating a pending record as lost.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/a-wallet-tracker-must-separate-swaps-from-transfers/">A Wallet Tracker Must Separate Swaps From Transfers</a></li>
+    <li><a href="/how-to-swap-for-a-tron-launchpad-entry-token/">How to Swap for a TRON Launchpad Entry Token</a></li>
+    <li><a href="/how-a-tron-swap-moves-tokens-from-your-tron-wallet/">How a tron swap moves tokens from your TRON wallet</a></li>
+    <li><a href="/choose-the-xmr-to-evm-route-before-you-send/">Choose the XMR-to-EVM Route Before You Send</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">An independent outlet. Nothing here is financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
