@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XMR bridge pauses during destination maintenance</title>
+<meta name="description" content="An XMR bridge can stop new transfers when its destination chain is under maintenance, while deposits and already submitted transactions follow separate steps.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why an XMR bridge may pause during destination maintenance">
+<meta property="og:description" content="An XMR bridge can stop new transfers when its destination chain is under maintenance, while deposits and already submitted transactions follow separate steps.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/why-an-xmr-bridge-may-pause-during-destination-maintenance-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why an XMR bridge may pause during destination maintenance"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why an XMR bridge may pause during destination maintenance">
+<meta name="twitter:description" content="An XMR bridge can stop new transfers when its destination chain is under maintenance, while deposits and already submitted transactions follow separate steps.">
+<meta property="article:published_time" content="2026-09-30T16:50:36+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/#webpage",
+      "url": "https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/",
+      "name": "XMR bridge pauses during destination maintenance",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/#article",
+      "headline": "Why an XMR bridge may pause during destination maintenance",
+      "isAccessibleForFree": true,
+      "description": "An XMR bridge can stop new transfers when its destination chain is under maintenance, while deposits and already submitted transactions follow separate steps.",
+      "datePublished": "2026-09-30T16:50:36+00:00",
+      "dateModified": "2026-09-30T16:50:36+00:00",
+      "url": "https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 611,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/covers/why-an-xmr-bridge-may-pause-during-destination-maintenance.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why an XMR bridge may pause during destination maintenance",
+          "item": "https://cryptoworldnews.github.io/why-an-xmr-bridge-may-pause-during-destination-maintenance/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">Why an XMR bridge may pause during destination maintenance</h1>
+<p class="s51c83d6">An XMR bridge can stop new transfers when its destination chain is under maintenance, while deposits and already submitted transactions follow separate steps.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-09-30T16:50:36+00:00">Sep 30, 2026</time><span class="s31cfcda">#ab48cb</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/why-an-xmr-bridge-may-pause-during-destination-maintenance.jpg" alt="Abstract cover artwork" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>An XMR bridge may pause new transfers when the destination network is being maintained because it cannot safely complete the last steps of a transfer. A bridge connects separate networks: it accepts or detects a deposit on one chain, then arranges an asset or payment on another. The destination chain’s validators, wallets or exchange services may need to be available before that second step can happen.</p>
+
+<p>The exact sequence depends on the bridge. Some systems hold an asset and issue a corresponding token elsewhere; others rely on a service or set of validators to observe deposits and authorize payouts. For a step-by-step look at <a href="https://keirannuzy570658.blogdon.net/how-to-use-an-xmr-bridge-for-btc-eth-and-usdt-59452537" rel="noopener">XMR bridge use for BTC, ETH and USDT</a>, see the guide to those routes. In every design, a transfer has distinct stages, so a pause can affect new requests differently from transfers already in progress.</p>
+
+<h2>What happens when a destination chain is under maintenance?</h2>
+
+<p>A bridge can stop accepting new transfers to a destination while its operators or software wait for that network to become usable. First, the bridge checks whether it can see and confirm the source deposit. Next, it prepares the destination transaction, such as a token release or payout. Finally, the destination network must process that transaction. If maintenance interrupts access to the network or its supporting services, the bridge may hold at the middle step rather than risk sending an incomplete or duplicate payment.</p>
+
+<p>Think of the bridge as a parcel service that has received a package but cannot deliver to a temporarily closed address. The package is not automatically lost, but delivery depends on the service’s process and records. A bridge may show a transfer as pending until it can continue, or it may reject new requests before any source deposit is made. Its status page or transaction instructions should say which stage is affected.</p>
+
+<h2>What happens to a transfer that is already pending?</h2>
+
+<p>A pending transfer remains tied to the step it reached before the pause. If the source deposit has not been confirmed, the bridge may still be waiting for the source chain. If the deposit is confirmed but the destination transaction has not been sent, the bridge may queue it. If the destination transaction was sent, its status depends on that network’s processing and the bridge’s tracking. These states are not interchangeable, so use the transaction record and the bridge’s stated procedure to identify what happened.</p>
+
+<p>Check these details before retrying:</p>
+
+<ul>
+<li>Whether the source deposit has a confirmation in its own network.</li>
+<li>Whether the bridge labels the transfer pending, completed or failed.</li>
+<li>Whether the destination network or a supporting wallet service is still under maintenance.</li>
+<li>What the bridge says to do with a pending transfer, including whether it will resume automatically.</li>
+</ul>
+
+<p>Sending again before checking can create a second transfer while the first is still queued. Keep the transaction identifiers and use only the recovery or support process published by the bridge itself. Never share a seed phrase or private key to resolve a pending payment.</p>
+
+<h2>How can users tell when transfers can resume?</h2>
+
+<p>Transfers can resume when the destination path works again and the bridge re-enables the route. That can require more than the chain itself producing blocks: the bridge may also need its node, wallet connection or signing process back online. Look for a route-specific status and updated instructions, then check the pending transaction before starting another one.</p>
+
+<p>The practical point is simple: a maintenance pause is a control on the bridge’s transfer process, not a guarantee that every in-flight payment has failed. Find the exact stage of your transfer, follow the bridge’s recovery instructions and wait for the destination route to reopen before sending again.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/how-arbitrage-rebalances-prices-across-token-pools/">How Arbitrage Rebalances Prices Across Token Pools</a></li>
+    <li><a href="/how-to-match-a-two-token-deposit-ratio-on-blackhole-swap/">How to Match a Two-Token Deposit Ratio on Blackhole Swap</a></li>
+    <li><a href="/how-much-liquidity-does-a-treasury-swap-need/">How Much Liquidity Does a Treasury Swap Need?</a></li>
+    <li><a href="/claim-pool-fees-without-removing-your-liquidity/">Claim Pool Fees Without Removing Your Liquidity</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">An independent outlet. Nothing here is financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
