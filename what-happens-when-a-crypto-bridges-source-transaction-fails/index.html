@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypto bridge source transaction failure, explained</title>
+<meta name="description" content="A failed source transaction usually leaves bridge funds unmoved, but still costs gas; learn how to read the receipt and separate a revert from a stalled relay.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What Happens When a Crypto Bridge’s Source Transaction Fails">
+<meta property="og:description" content="A failed source transaction usually leaves bridge funds unmoved, but still costs gas; learn how to read the receipt and separate a revert from a stalled relay.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/what-happens-when-a-crypto-bridges-source-transaction-fails-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What Happens When a Crypto Bridge’s Source Transaction Fails"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Happens When a Crypto Bridge’s Source Transaction Fails">
+<meta name="twitter:description" content="A failed source transaction usually leaves bridge funds unmoved, but still costs gas; learn how to read the receipt and separate a revert from a stalled relay.">
+<meta property="article:published_time" content="2026-09-30T15:42:39+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/#webpage",
+      "url": "https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/",
+      "name": "Crypto bridge source transaction failure, explained",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/#article",
+      "headline": "What Happens When a Crypto Bridge’s Source Transaction Fails",
+      "isAccessibleForFree": true,
+      "description": "A failed source transaction usually leaves bridge funds unmoved, but still costs gas; learn how to read the receipt and separate a revert from a stalled relay.",
+      "datePublished": "2026-09-30T15:42:39+00:00",
+      "dateModified": "2026-09-30T15:42:39+00:00",
+      "url": "https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 561,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/covers/what-happens-when-a-crypto-bridges-source-transaction-fails.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What Happens When a Crypto Bridge’s Source Transaction Fails",
+          "item": "https://cryptoworldnews.github.io/what-happens-when-a-crypto-bridges-source-transaction-fails/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">What Happens When a Crypto Bridge’s Source Transaction Fails</h1>
+<p class="s51c83d6">A failed source transaction usually leaves bridge funds unmoved, but still costs gas; learn how to read the receipt and separate a revert from a stalled relay.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-09-30T15:42:39+00:00">Sep 30, 2026</time><span class="s31cfcda">#b0b1cf</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/what-happens-when-a-crypto-bridges-source-transaction-fails.jpg" alt="Abstract cover artwork" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>A failed source transaction usually means the bridge never received a valid instruction to move your funds. Your wallet submits a transaction to the source chain; a bridge contract may check an approval, swap tokens, and lock or burn assets; then a validator or messaging system can relay the resulting instruction to the destination chain. If the source transaction reverts, those contract changes roll back, so the bridge cannot act on them. The chain still charges for the computation used before the failure.</p>
+
+<h2>What does a failed source transaction mean?</h2>
+<p>It means the transaction was included on the source chain but its execution did not complete successfully. The transaction receipt should show a failed status, and a block explorer may display a revert reason, such as insufficient allowance, a minimum-output check that was not met, or a deadline that expired.</p>
+<p>A bridge route can involve several steps in one source transaction. The router may call a token contract to transfer funds, make a swap, and call the bridge contract. If any required step reverts, the whole transaction’s state changes are undone. Think of it as a package that has to pass every checkpoint before it leaves the source depot: a failed checkpoint stops the package, though the work already done still costs fuel.</p>
+<p>Routes can use different bridge and liquidity mechanisms, so the exact checks vary. A guide to <a href="https://cryptoblog.justblogged.com/how-choose-bungee-bridge-routes-your-transfer" rel="noopener">how Bungee bridge routes choose a transfer path</a> covers the route-selection detail that matters before you submit. The key point here is that a route shown in a quote is not proof that a source transaction succeeded.</p>
+
+<h2>Do you lose the tokens or only pay gas?</h2>
+<p>For a reverted transaction, you generally pay the source chain’s transaction fee, but the token transfer, swap, lock, or burn performed inside that transaction is rolled back. That is different from a successful source transaction followed by a delayed or failed destination step. In that case, the source-side action may already have happened, and recovery depends on the bridge’s message and refund process.</p>
+<p>Check the transaction status before trying again. A pending transaction has not yet produced a final result. A dropped or replaced transaction may not have executed at all. A failed receipt confirms execution was attempted and reverted. On some chains, explorers use different labels, so inspect the receipt and any bridge status page rather than relying on a wallet notification alone.</p>
+
+<h2>What should you check before retrying?</h2>
+<p>First confirm whether the source transaction failed or succeeded. Then use the failure details to identify what needs to change. Retrying the same transaction without fixing its cause can produce the same result and another fee.</p>
+<ul>
+<li>Check the receipt and revert reason on the source chain.</li>
+<li>Confirm the token, destination network, recipient address, and amount.</li>
+<li>Check whether the token approval covers the amount and whether the quote’s minimum output or expiry conditions still hold.</li>
+<li>If the source transaction succeeded, look up the bridge transfer status before submitting another transfer.</li>
+</ul>
+<p>When the source receipt shows failure, the usual next step is to correct the stated issue, request a fresh route quote if needed, and submit again only after checking the transaction details. When it shows success, treat the transfer as an in-progress bridge message and follow the bridge’s recovery steps. That distinction tells you whether to retry the source action or investigate delivery on the destination chain.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/why-wallet-network-data-goes-out-of-date/">Why Wallet Network Data Goes Out of Date</a></li>
+    <li><a href="/how-a-same-chain-stablecoin-swap-works/">How a Same-Chain Stablecoin Swap Works</a></li>
+    <li><a href="/what-to-do-with-an-unfilled-limit-order-after-a-swap/">What to Do With an Unfilled Limit Order After a Swap</a></li>
+    <li><a href="/how-new-token-pool-seeding-creates-a-market/">How New Token Pool Seeding Creates a Market</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">An independent outlet. Nothing here is financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
