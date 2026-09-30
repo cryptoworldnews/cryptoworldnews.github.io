@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon PoS State Sync: How Deposits Reach Bor</title>
+<meta name="description" content="Polygon PoS state sync carries an Ethereum deposit message through Heimdall to Bor, where a child-chain contract mints the matching token after the root asset is locked.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Polygon PoS State Sync Delivers a Deposit">
+<meta property="og:description" content="Polygon PoS state sync carries an Ethereum deposit message through Heimdall to Bor, where a child-chain contract mints the matching token after the root asset is locked.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/how-polygon-pos-state-sync-delivers-a-deposit-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Polygon PoS State Sync Delivers a Deposit"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Polygon PoS State Sync Delivers a Deposit">
+<meta name="twitter:description" content="Polygon PoS state sync carries an Ethereum deposit message through Heimdall to Bor, where a child-chain contract mints the matching token after the root asset is locked.">
+<meta property="article:published_time" content="2026-09-30T12:57:50+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/#webpage",
+      "url": "https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/",
+      "name": "Polygon PoS State Sync: How Deposits Reach Bor",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/#article",
+      "headline": "How Polygon PoS State Sync Delivers a Deposit",
+      "isAccessibleForFree": true,
+      "description": "Polygon PoS state sync carries an Ethereum deposit message through Heimdall to Bor, where a child-chain contract mints the matching token after the root asset is locked.",
+      "datePublished": "2026-09-30T12:57:50+00:00",
+      "dateModified": "2026-09-30T12:57:50+00:00",
+      "url": "https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 550,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/covers/how-polygon-pos-state-sync-delivers-a-deposit.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Polygon PoS State Sync Delivers a Deposit",
+          "item": "https://cryptoworldnews.github.io/how-polygon-pos-state-sync-delivers-a-deposit/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">How Polygon PoS State Sync Delivers a Deposit</h1>
+<p class="s51c83d6">Polygon PoS state sync carries an Ethereum deposit message through Heimdall to Bor, where a child-chain contract mints the matching token after the root asset is locked.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-09-30T12:57:50+00:00">Sep 30, 2026</time><span class="s31cfcda">#372da9</span><span>2 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/how-polygon-pos-state-sync-delivers-a-deposit.jpg" alt="Abstract cover artwork" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>Polygon PoS state sync delivers a deposit by carrying a message from an Ethereum contract, through Heimdall, to a contract on Bor that mints the matching token. The Ethereum transaction locks the original asset first. Validators relay its event, and Bor executes the message on Polygon. The user gets a token they can use on Polygon; the original remains locked on Ethereum.</p>
+
+<h2>What happens when a user deposits through the Polygon PoS Bridge?</h2>
+
+<p>A deposit starts when the user calls the bridge’s Ethereum-side contract. The contract checks that the asset is supported and mapped to a Polygon token. For a token deposit, a predicate contract locks the asset; it does not send the Ethereum token across the network. The bridge then asks StateSender to publish a message containing the information needed on Polygon, such as the recipient and amount.</p>
+
+<p>That event is the handoff point. State sync is the delivery path for the message, while the bridge contracts define what the message does. For a fuller walk-through of <a href="https://paragraph.com/@owofadanuvoj67/what-is-polygon-bridge-and-how-do-you-move-tokens" rel="noopener">how Polygon’s bridge moves tokens between Ethereum and Polygon</a>, see the companion guide. Here, the key point is that the event announces a deposit; it does not itself mint the Polygon token.</p>
+
+<h2>How do Heimdall and Bor carry out state sync?</h2>
+
+<p>Heimdall validators observe eligible events on Ethereum and record their message data as pending state syncs. Heimdall is the coordination layer. Bor is the execution layer that produces Polygon PoS blocks and runs the child-chain contracts. Bor requests pending messages from Heimdall and processes them in sequence as part of block execution.</p>
+
+<p>Think of Heimdall as a dispatch desk passing an instruction to the workshop. The analogy stops there: the actual systems use validator consensus, event records, and deterministic contract calls. Each Bor node must process the same eligible messages in the same order, so they reach the same chain state.</p>
+
+<ul>
+<li><strong>Ethereum bridge contract:</strong> locks the original asset and initiates the message.</li>
+<li><strong>StateSender:</strong> emits the event that carries the deposit instruction.</li>
+<li><strong>Heimdall:</strong> records eligible events for delivery to Bor.</li>
+<li><strong>Bor and the child-chain manager:</strong> execute the instruction and mint the mapped token for the recipient.</li>
+</ul>
+
+<p>The child-chain manager receives the message and calls the relevant token logic. That logic mints the matching Polygon representation to the recipient. The user can then transfer or use that token on Polygon. The bridge’s mapping connects the Ethereum asset to its Polygon counterpart; state sync transports the instruction, not the asset’s bytes or ownership record.</p>
+
+<h2>Why can a deposit take time to appear on Polygon?</h2>
+
+<p>A deposit appears after the Ethereum event has been observed, accepted for relay, and processed by Bor. These are separate steps, so an Ethereum transaction confirmation does not mean the Polygon token has already been minted. A queue or interruption in event processing can delay delivery even while Polygon blocks continue to be produced.</p>
+
+<p>For a deposit in progress, check both sides of the route: first confirm the Ethereum transaction succeeded and locked the asset, then check whether the corresponding Polygon transaction or balance update has appeared. If the first step succeeded and the second has not, the state sync may still be pending. The lock-and-mint design keeps the original on Ethereum while the matching representation is used on Polygon; the relay is what connects those two contract actions.</div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/rebalance-yield-vaults-after-withdrawals-in-five-steps/">Rebalance Yield Vaults After Withdrawals in Five Steps</a></li>
+    <li><a href="/a-cross-chain-transfer-is-pending-what-should-you-do/">A Cross-Chain Transfer Is Pending. What Should You Do?</a></li>
+    <li><a href="/why-a-crypto-bridge-route-can-vanish-after-an-upgrade/">Why a Crypto Bridge Route Can Vanish After an Upgrade</a></li>
+    <li><a href="/check-the-usdc-network-before-you-send/">Check the USDC Network Before You Send</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">An independent outlet. Nothing here is financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
