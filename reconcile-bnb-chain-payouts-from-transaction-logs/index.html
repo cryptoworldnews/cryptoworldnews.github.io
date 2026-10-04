@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reconcile BNB Chain Payouts by Transaction Log</title>
+<meta name="description" content="Match each expected payout to its on-chain transfer, then check the receipt, token contract and raw amount to find missing, duplicate or mismatched payments.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Reconcile BNB Chain Payouts from Transaction Logs">
+<meta property="og:description" content="Match each expected payout to its on-chain transfer, then check the receipt, token contract and raw amount to find missing, duplicate or mismatched payments.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/reconcile-bnb-chain-payouts-from-transaction-logs-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Reconcile BNB Chain Payouts from Transaction Logs"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reconcile BNB Chain Payouts from Transaction Logs">
+<meta name="twitter:description" content="Match each expected payout to its on-chain transfer, then check the receipt, token contract and raw amount to find missing, duplicate or mismatched payments.">
+<meta property="article:published_time" content="2026-10-04T07:09:49+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/#webpage",
+      "url": "https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/",
+      "name": "Reconcile BNB Chain Payouts by Transaction Log",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/#article",
+      "headline": "Reconcile BNB Chain Payouts from Transaction Logs",
+      "isAccessibleForFree": true,
+      "description": "Match each expected payout to its on-chain transfer, then check the receipt, token contract and raw amount to find missing, duplicate or mismatched payments.",
+      "datePublished": "2026-10-04T07:09:49+00:00",
+      "dateModified": "2026-10-04T07:09:49+00:00",
+      "url": "https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 673,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/reconcile-bnb-chain-payouts-from-transaction-logs-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/reconcile-bnb-chain-payouts-from-transaction-logs-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/reconcile-bnb-chain-payouts-from-transaction-logs-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Reconcile BNB Chain Payouts from Transaction Logs",
+          "item": "https://cryptoworldnews.github.io/reconcile-bnb-chain-payouts-from-transaction-logs/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">Reconcile BNB Chain Payouts from Transaction Logs</h1>
+<p class="s51c83d6">Match each expected payout to its on-chain transfer, then check the receipt, token contract and raw amount to find missing, duplicate or mismatched payments.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-04T07:09:49+00:00">Oct 4, 2026</time><span class="s31cfcda">#bd519f</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/reconcile-bnb-chain-payouts-from-transaction-logs.jpg" alt="Abstract cover artwork" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>To reconcile BNB Chain payouts, match each expected payment to a confirmed transaction and verify the transfer recorded by the chain. A transaction is the instruction sent to the network; its receipt records whether execution succeeded and which logs it produced. For a token payout, the token contract emits a transfer event during execution. For a payout in native BNB, the amount is recorded as a transaction value, not as a token transfer event.</p>
+
+<p>Start with the payout list. For every payment, record the recipient address, asset, expected amount and relevant time window. Then collect transaction hashes from the payout system, or search the chain’s records for transfers from the paying wallet and token contract. A transaction explorer can make individual checks easier, while an RPC service can retrieve receipts and matching logs in batches. A <a href="https://fabian-eth-r7au8lpnpcqpllj1uwxi1.justblogged.com/poocoin-find-right-bnb-token-chart-wallet-view" rel="noopener">Poocoin guide to connecting token charts with wallet activity</a> goes further into using those views to inspect a wallet’s token movements.</p>
+
+<h2>What does a transaction log show?</h2>
+
+<p>A transaction log shows an event emitted by a contract while the transaction ran. It is included in the transaction receipt, alongside the execution status. Each log identifies the contract that emitted it and includes topics and data that must be interpreted using the contract’s event definition, or ABI.</p>
+
+<p>For a typical BEP-20 transfer, the event identifies a sender, a recipient and a token quantity. The token contract address matters: two contracts can emit events with the same shape, and the same token name or ticker can appear on different contracts. Check the contract address against the token contract used by the payout system before counting the transfer.</p>
+
+<p>A receipt marked successful means the transaction executed without reverting. It does not by itself prove that the intended recipient received the intended asset. The useful record is the successful receipt plus the correct contract’s transfer log, with the expected recipient and amount. Native BNB needs a different check: inspect the transaction’s value and destination, since it does not use a BEP-20 contract log.</p>
+
+<h2>How do you match logs to a payout list?</h2>
+
+<p>Match one expected payment at a time, using the asset contract, recipient and amount as the main fields. Use the transaction hash to open its receipt, or query logs by block range, contract address and event topics. An RPC log query can filter by indexed event fields, such as a recipient address, but the returned data still needs decoding and comparison.</p>
+
+<ul>
+<li>Confirm the network is BNB Smart Chain and the receipt belongs to the expected transaction.</li>
+<li>Check that the receipt succeeded and that the log came from the intended token contract.</li>
+<li>Compare the recipient address and amount with the payout record.</li>
+<li>Count each matching event once, and flag expected payments with no match or more than one match.</li>
+</ul>
+
+<p>Token amounts in logs use integer base units. Convert them using the token’s decimals before comparing them with a payout list shown in human-readable units. Keep the raw value as well as the converted figure; rounding a display value can hide a small difference. Some tokens also charge a transfer fee or apply other custom transfer rules. In that case, compare the recorded event and the recipient’s actual balance change with the token’s documented behavior, rather than assuming the requested amount equals the received amount.</p>
+
+<h2>What causes a payout mismatch?</h2>
+
+<p>A missing match can mean a payout was never sent, the receipt failed, or the search covered the wrong block range or contract. A duplicate match can mean the same event was counted twice, or that two transfers reached the same recipient. Compare transaction hash and log index as well as recipient and amount: one transaction can emit multiple transfer events.</p>
+
+<p>Keep separate records for native BNB and tokens, and save the transaction hash, block number, contract address, recipient, raw amount and receipt status for each match. This makes a review repeatable and exposes the source of a discrepancy. The reliable reconciliation is a row-by-row match between the payout list and confirmed on-chain records, with unmatched rows left visible for investigation.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/why-large-tron-swaps-move-the-price/">Why Large TRON Swaps Move the Price</a></li>
+    <li><a href="/why-polygon-bridge-deposits-can-take-time-to-credit/">Why Polygon Bridge Deposits Can Take Time to Credit</a></li>
+    <li><a href="/fast-bridge-withdrawal-or-standard-exit-follow-the-liquidity/">Fast Bridge Withdrawal or Standard Exit? Follow the Liquidity</a></li>
+    <li><a href="/eth-on-mantle-needs-mnt-for-the-next-transaction/">ETH on Mantle Needs MNT for the Next Transaction</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">An independent outlet. Nothing here is financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
