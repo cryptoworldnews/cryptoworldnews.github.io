@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blast bridge pending: why transfers stall and what to do</title>
+<meta name="description" content="A Blast transfer can pause before the source transaction confirms; a withdrawal may still need its challenge period and final Ethereum step before funds arrive.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Blast bridge pending: trace the transfer before acting">
+<meta property="og:description" content="A Blast transfer can pause before the source transaction confirms; a withdrawal may still need its challenge period and final Ethereum step before funds arrive.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/blast-bridge-pending-trace-the-transfer-before-acting-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blast bridge pending: trace the transfer before acting"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blast bridge pending: trace the transfer before acting">
+<meta name="twitter:description" content="A Blast transfer can pause before the source transaction confirms; a withdrawal may still need its challenge period and final Ethereum step before funds arrive.">
+<meta property="article:published_time" content="2026-10-06T23:58:15+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/#webpage",
+      "url": "https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/",
+      "name": "Blast bridge pending: why transfers stall and what to do",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/#article",
+      "headline": "Blast bridge pending: trace the transfer before acting",
+      "isAccessibleForFree": true,
+      "description": "A Blast transfer can pause before the source transaction confirms; a withdrawal may still need its challenge period and final Ethereum step before funds arrive.",
+      "datePublished": "2026-10-06T23:58:15+00:00",
+      "dateModified": "2026-10-06T23:58:15+00:00",
+      "url": "https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 646,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/blast-bridge-pending-trace-the-transfer-before-acting-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/blast-bridge-pending-trace-the-transfer-before-acting-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/blast-bridge-pending-trace-the-transfer-before-acting-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blast bridge pending: trace the transfer before acting",
+          "item": "https://cryptoworldnews.github.io/blast-bridge-pending-trace-the-transfer-before-acting/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">Blast bridge pending: trace the transfer before acting</h1>
+<p class="s51c83d6">A Blast transfer can pause before the source transaction confirms; a withdrawal may still need its challenge period and final Ethereum step before funds arrive.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-06T23:58:15+00:00">Oct 6, 2026</time><span class="s31cfcda">#48337c</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/blast-bridge-pending-trace-the-transfer-before-acting.jpg" alt="Blast bridge pending: trace the transfer before acting" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>A blast bridge transfer can stay pending because the source transaction, the cross-chain message or the destination credit has not finished. First, the wallet signs a transaction on the chain holding the funds. That chain includes it in a block and records the result. For an Ethereum-to-Blast deposit, the bridge contract receives the transaction and passes a message to Blast. Blast’s sequencer processes that message, and the balance appears on the destination chain.</p>
+
+<p>For an Ethereum-to-Blast deposit, choose Ethereum as the source, Blast as the destination, then select ETH or a stablecoin and confirm the transaction in your wallet. The <a href="https://blastbridge.org" rel="noopener">blast bridge</a> is a crypto bridge that moves ETH and stablecoins from Ethereum to Blast, an Ethereum layer 2 with native yield on ETH and stablecoins. Once you submit, save the transaction hash: it lets you check whether the source transaction was included and whether it succeeded.</p>
+
+<h2>Why is my blast bridge transfer still pending?</h2>
+
+<p>“Pending” is a label, not a diagnosis. It may describe a transaction waiting in your wallet’s queue, a submitted transaction awaiting confirmation, or a bridge message that has not yet produced a destination credit. Those stages happen in sequence, so a delay at one stage holds up the ones after it.</p>
+
+<p>Start with the source-chain transaction hash. If the transaction is still pending there, the bridge has not yet received a confirmed deposit to process. If it failed, the funds were not deposited by that transaction; check the wallet’s record before trying again. If it succeeded, check the destination address and the Blast transaction record. The credit may still be processing, or the wallet may be showing an old balance.</p>
+
+<p>A useful analogy is a parcel with separate tracking scans: a successful handoff at the first depot does not mean it has reached the address. The transaction hash and chain records show which handoff has happened. Do not send a second transfer just because a page still says pending; first confirm that the original transaction failed or never left your wallet.</p>
+
+<h2>What does pending mean when withdrawing from Blast?</h2>
+
+<p>A withdrawal from Blast to Ethereum follows a different path. The wallet first submits a transaction on Blast. The rollup then publishes the withdrawal information to Ethereum, where it must pass through the bridge’s proving and challenge process. After that waiting stage, a separate Ethereum transaction may be required to finalize the withdrawal and release the funds.</p>
+
+<p>That means “pending” can be expected while a canonical withdrawal is in its challenge period. It does not mean the funds have vanished, and waiting alone may not complete the final step. Check the withdrawal’s stage and whether the bridge marks it ready for finalization. If it is ready, the Ethereum wallet used for the final transaction needs enough ETH for gas.</p>
+
+<h2>What should I check before trying again?</h2>
+
+<p>Use the transaction hash, not the wallet’s summary label, to decide what to do next. Compare the source and destination addresses, asset, and amount with the transfer you intended. Then check the transaction’s status on the relevant chain and whether a later bridge step is waiting for you.</p>
+
+<ul>
+<li>If the wallet has not submitted the transaction, check that it is connected to the intended network and that you approved the request.</li>
+<li>If the source transaction is pending, wait for its result before submitting another transfer.</li>
+<li>If the source transaction succeeded, check the destination record and the bridge message’s progress.</li>
+<li>If a withdrawal is ready to finalize, confirm the destination address and the transaction details before signing on Ethereum.</li>
+</ul>
+
+<p>Use the bridge route you intended and review the transaction details before signing. A pending status can be a normal stage in the process, but an unfamiliar approval or unexpected transaction request is a reason to stop and verify the route. The practical rule is simple: identify the last completed step, then wait or complete the next one.</div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/fairshake-names-32-house-candidates-for-crypto-spending/">Fairshake names 32 House candidates for crypto spending</a></li>
+    <li><a href="/fairshake-backs-32-house-candidates-as-crypto-bill-stalls/">Fairshake backs 32 House candidates as crypto bill stalls</a></li>
+    <li><a href="/market-cap-and-fdv-what-changes-as-token-supply-grows/">Market Cap and FDV: What Changes as Token Supply Grows</a></li>
+    <li><a href="/sec-proposes-guarded-crypto-self-custody-for-advisers-and-funds/">SEC proposes guarded crypto self-custody for advisers and funds</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
