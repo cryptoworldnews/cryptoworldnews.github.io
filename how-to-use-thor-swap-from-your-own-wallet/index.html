@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>thor swap: How to make a cross-chain swap from your wallet</title>
+<meta name="description" content="A wallet-led thor swap starts with the source chain, destination asset and recipient address; the wallet signs the transfer while the route handles the cross-chain exchange.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to use thor swap from your own wallet">
+<meta property="og:description" content="A wallet-led thor swap starts with the source chain, destination asset and recipient address; the wallet signs the transfer while the route handles the cross-chain exchange.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/how-to-use-thor-swap-from-your-own-wallet-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to use thor swap from your own wallet"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to use thor swap from your own wallet">
+<meta name="twitter:description" content="A wallet-led thor swap starts with the source chain, destination asset and recipient address; the wallet signs the transfer while the route handles the cross-chain exchange.">
+<meta property="article:published_time" content="2026-10-13T21:47:05+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/#webpage",
+      "url": "https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/",
+      "name": "thor swap: How to make a cross-chain swap from your wallet",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/#article",
+      "headline": "How to use thor swap from your own wallet",
+      "isAccessibleForFree": true,
+      "description": "A wallet-led thor swap starts with the source chain, destination asset and recipient address; the wallet signs the transfer while the route handles the cross-chain exchange.",
+      "datePublished": "2026-10-13T21:47:05+00:00",
+      "dateModified": "2026-10-13T21:47:05+00:00",
+      "url": "https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 642,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-to-use-thor-swap-from-your-own-wallet-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-to-use-thor-swap-from-your-own-wallet-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-to-use-thor-swap-from-your-own-wallet-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to use thor swap from your own wallet",
+          "item": "https://cryptoworldnews.github.io/how-to-use-thor-swap-from-your-own-wallet/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">How to use thor swap from your own wallet</h1>
+<p class="s51c83d6">A wallet-led thor swap starts with the source chain, destination asset and recipient address; the wallet signs the transfer while the route handles the cross-chain exchange.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-13T21:47:05+00:00">Oct 13, 2026 · 21:47 UTC</time><span class="s31cfcda">#5fa336</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/how-to-use-thor-swap-from-your-own-wallet.jpg" alt="How to use thor swap from your own wallet" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>A thor swap from your own wallet starts by choosing the asset to send, the asset to receive and the wallet address that should receive it. Your wallet signs the transaction on the source chain; the swap route processes the exchange and sends the destination asset to the receiving address. The service does not need your seed phrase to do this.</p>
+
+<h2>How does a thor swap work from a wallet?</h2>
+
+<p>First, connect a wallet that holds the asset you want to send. A wallet connection lets the service read the address and prepare a transaction; it does not itself move funds. For a cross-chain swap, you may also need a wallet address on the destination chain. Some services let you connect both wallets, while others ask you to enter the receiving address.</p>
+
+<p>Next, select the source network and asset, then the destination network and asset. These choices identify where the funds leave and what should arrive. Check the network as well as the token name: similar names can refer to different assets on different chains. If the job is to move value across chains and exchange it in the same process, <a href="https://thorswap.us" rel="noopener">thor swap</a> offers a cross-chain bridge and swap service in a single flow.</p>
+
+<p>Enter an amount and inspect the quote before signing. The quote estimates the output after the route’s exchange rate and costs. It can change before execution, especially when the market moves or the trade is large compared with available liquidity. The wallet then prepares the source-chain transaction. Depending on the asset, that can mean sending a native coin or approving a token contract before sending the token.</p>
+
+<h2>What should I check before signing a cross-chain swap?</h2>
+
+<p>Read the transaction details in your wallet and compare them with the swap you set up. A token approval gives a contract permission to use a specified token amount; it is separate from the swap itself. On some networks, the wallet may ask for this approval first and the deposit transaction second. A native coin does not use a token approval, but still needs a network fee.</p>
+
+<ul>
+<li>Confirm the source network, asset and amount.</li>
+<li>Check the destination network, asset and receiving address.</li>
+<li>Leave enough of the source chain’s native coin to pay transaction fees.</li>
+<li>Review the quoted output and any minimum amount shown before signing.</li>
+</ul>
+
+<p>For a first transaction to an address you have not used before, check the address carefully and consider sending a smaller amount. A transaction on a public blockchain is generally difficult or impossible to reverse once confirmed. Never enter a seed phrase into a swap page or approve a wallet request that does not match the action you chose.</p>
+
+<h2>What happens after the wallet sends the funds?</h2>
+
+<p>The source-chain transaction must first be broadcast and confirmed. The swap route then detects the deposit, performs the exchange and sends the output on the destination chain. Think of the route as a courier carrying an instruction between two separate ledgers: the source wallet’s confirmation does not mean the destination transfer has already landed.</p>
+
+<p>Keep the transaction record or hash and check the service’s status information if the output is delayed. Cross-chain swaps involve activity on more than one network, so the source transfer and destination delivery can have different confirmation times. If the source transaction fails, the wallet or service may show that status; if it confirms but the destination transfer is still pending, use the swap’s tracking details before trying again. Sending a second deposit can create a second swap.</p>
+
+<p>The practical rule is to treat the wallet signature as authorization for a specific transaction, not as a general login. Choose the chains and receiving address first, check the quote and fees, then approve only the wallet prompts that match those choices. That sequence makes it easier to use thor swap while keeping custody of the wallet’s keys.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/binance-sets-nov-10-cutoff-for-mining-pool-services/">Binance sets Nov. 10 cutoff for mining pool services</a></li>
+    <li><a href="/ledger-ties-confirmed-wallet-drains-to-cryptobilis-reseller/">Ledger Ties Confirmed Wallet Drains to CryptoBilis Reseller</a></li>
+    <li><a href="/xrpl-defends-emergency-fix-for-xrp-overflow-bug/">XRPL defends emergency fix for XRP overflow bug</a></li>
+    <li><a href="/samsung-wallet-to-add-usdc-remittances-for-82m-devices/">Samsung Wallet to add USDC remittances for 82M devices</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
