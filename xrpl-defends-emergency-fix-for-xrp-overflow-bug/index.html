@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XRP Ledger patch fixed order book overflow bug</title>
+<meta name="description" content="XRPL developers say an emergency server patch stopped an order book overflow flaw that could create spendable XRP, bypassing the usual validator vote.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="XRPL defends emergency fix for XRP overflow bug">
+<meta property="og:description" content="XRPL developers say an emergency server patch stopped an order book overflow flaw that could create spendable XRP, bypassing the usual validator vote.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/xrpl-defends-emergency-fix-for-xrp-overflow-bug-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="XRPL defends emergency fix for XRP overflow bug"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="XRPL defends emergency fix for XRP overflow bug">
+<meta name="twitter:description" content="XRPL developers say an emergency server patch stopped an order book overflow flaw that could create spendable XRP, bypassing the usual validator vote.">
+<meta property="article:published_time" content="2026-10-13T06:27:00+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/#webpage",
+      "url": "https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/",
+      "name": "XRP Ledger patch fixed order book overflow bug",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "NewsArticle",
+      "@id": "https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/#article",
+      "headline": "XRPL defends emergency fix for XRP overflow bug",
+      "isAccessibleForFree": true,
+      "description": "XRPL developers say an emergency server patch stopped an order book overflow flaw that could create spendable XRP, bypassing the usual validator vote.",
+      "datePublished": "2026-10-13T06:27:00+00:00",
+      "dateModified": "2026-10-13T06:27:00+00:00",
+      "url": "https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 468,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/xrpl-defends-emergency-fix-for-xrp-overflow-bug-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/xrpl-defends-emergency-fix-for-xrp-overflow-bug-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/xrpl-defends-emergency-fix-for-xrp-overflow-bug-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "XRPL defends emergency fix for XRP overflow bug",
+          "item": "https://cryptoworldnews.github.io/xrpl-defends-emergency-fix-for-xrp-overflow-bug/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">XRPL defends emergency fix for XRP overflow bug</h1>
+<p class="s51c83d6">XRPL developers say an emergency server patch stopped an order book overflow flaw that could create spendable XRP, bypassing the usual validator vote.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-13T06:27:00+00:00">Oct 13, 2026 · 06:27 UTC</time><span class="s31cfcda">#aebd53</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/xrpl-defends-emergency-fix-for-xrp-overflow-bug.jpg" alt="XRPL defends emergency fix for XRP overflow bug" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>The XRP Ledger released an emergency software fix after researchers found that a payment could create spendable XRP from an order book overflow, and developers say the normal amendment vote would have left the flaw exposed for weeks. The bug was in the payment engine, the software that calculates how much a buyer pays when a payment crosses offers on the ledger’s built-in exchange.</p>
+
+<p>According to the <a href="https://xrpl.org/es-es/blog/2026/vulnerabilitydisclosurereport-bug-20261009" rel="nofollow noopener">XRPL vulnerability disclosure report</a>, a researcher reported the flaw through the bug bounty program on Sept. 22. RippleX reproduced it, and the fix shipped in xrpld version 3.4.1 on Sept. 25. The report says XRPL Foundation members, RippleX, maintainers and validators agreed the risk justified a direct software change instead of waiting for an amendment vote.</p>
+
+<h2>How could an order book payment create new XRP?</h2>
+
+<p>A payment can consume multiple offers in an order book. The payment engine adds up the XRP owed across those offers, then charges the buyer that total. The bug was in that addition: it used a fixed-width integer without checking whether the sum had exceeded its maximum value.</p>
+
+<p>When the number overflowed, it wrapped around to a small value, like an odometer rolling back after passing its last digit. The engine still paid each offer owner the full amount, but charged the buyer only the wrapped total. The gap became new XRP. The ledger’s invariant, a safety check meant to catch transactions that create XRP, used the same kind of sum and overflowed in the same way.</p>
+
+<p>The attack required hundreds of specially priced offers and a payment designed to consume them all. XRPL says it could not happen through an ordinary trade, and investigators found no evidence it had been exploited on a public network.</p>
+
+<h2>Why did the fix skip the usual amendment vote?</h2>
+
+<p>Normally, protocol changes go through an amendment process in which validators vote, with a change taking effect after more than 80% support for two weeks. Developers said publishing the fix through that process would have revealed the vulnerability before the change took effect, giving attackers time to act.</p>
+
+<p>The <a href="https://cointelegraph.com/news/xrp-ledger-defends-emergency-patch-for-unlimited-xrp-bug" rel="nofollow noopener">Cointelegraph report on the patch debate</a> says XRPL developers also pushed back on claims that operators were forced to install the update. The official disclosure says more than 80% of default UNL validators were running version 3.4.1 or later on release day. The fix took effect when a server operator upgraded.</p>
+
+<h2>What changed in version 3.4.1?</h2>
+
+<p>The payment engine now checks for overflow when it adds amounts across offers and across multiple payment paths. If a total would overflow, that part of the payment fails with a “path dry” or “partial payment” result; it does not mint XRP. The report says the emergency decision was made for this severe bug, while transaction-processing changes continue to use amendments as the normal route.</p>
+<h2>Source material</h2>
+<ul><li><a href="https://xrpl.org/es-es/blog/2026/vulnerabilitydisclosurereport-bug-20261009" rel="nofollow noopener">XRPL vulnerability disclosure report</a> — xrpl.org</li><li><a href="https://cointelegraph.com/news/xrp-ledger-defends-emergency-patch-for-unlimited-xrp-bug" rel="nofollow noopener">Cointelegraph report on the patch debate</a> — cointelegraph.com</li></ul></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/samsung-wallet-to-add-usdc-remittances-for-82m-devices/">Samsung Wallet to add USDC remittances for 82M devices</a></li>
+    <li><a href="/esma-opens-inquiry-into-tokenised-collateral-for-eu-clearing/">ESMA opens inquiry into tokenised collateral for EU clearing</a></li>
+    <li><a href="/fairshake-backs-32-house-candidates-as-crypto-bill-stalls-4/">Fairshake backs 32 House candidates as crypto bill stalls</a></li>
+    <li><a href="/esma-opens-review-of-tokenised-collateral-at-eu-clearing-houses/">ESMA opens review of tokenised collateral at EU clearing houses</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
