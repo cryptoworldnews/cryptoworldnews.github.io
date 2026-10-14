@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mantle bridge: how to transfer and verify funds</title>
+<meta name="description" content="A Mantle bridge transfer starts on one chain and completes on another. Check the source transaction, destination address and token balance to confirm arrival.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How a Mantle bridge transfer works, and how to check it arrived">
+<meta property="og:description" content="A Mantle bridge transfer starts on one chain and completes on another. Check the source transaction, destination address and token balance to confirm arrival.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How a Mantle bridge transfer works, and how to check it arrived"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How a Mantle bridge transfer works, and how to check it arrived">
+<meta name="twitter:description" content="A Mantle bridge transfer starts on one chain and completes on another. Check the source transaction, destination address and token balance to confirm arrival.">
+<meta property="article:published_time" content="2026-10-14T10:50:45+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/#webpage",
+      "url": "https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/",
+      "name": "Mantle bridge: how to transfer and verify funds",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/#article",
+      "headline": "How a Mantle bridge transfer works, and how to check it arrived",
+      "isAccessibleForFree": true,
+      "description": "A Mantle bridge transfer starts on one chain and completes on another. Check the source transaction, destination address and token balance to confirm arrival.",
+      "datePublished": "2026-10-14T10:50:45+00:00",
+      "dateModified": "2026-10-14T10:50:45+00:00",
+      "url": "https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 555,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How a Mantle bridge transfer works, and how to check it arrived",
+          "item": "https://cryptoworldnews.github.io/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">How a Mantle bridge transfer works, and how to check it arrived</h1>
+<p class="s51c83d6">A Mantle bridge transfer starts on one chain and completes on another. Check the source transaction, destination address and token balance to confirm arrival.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-14T10:50:45+00:00">Oct 14, 2026 · 10:50 UTC</time><span class="s31cfcda">#f41a32</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived.jpg" alt="How a Mantle bridge transfer works, and how to check it arrived" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>A mantle bridge transfer moves an asset from one blockchain to another by recording a transaction on the source chain and processing a corresponding message on Mantle. The wallet signs the source transaction, the bridge contract records it, and the destination chain credits the asset to the chosen address. To verify arrival, check both the source transaction and the destination balance.</p>
+
+<h2>How does a Mantle bridge transfer work?</h2>
+<p>For a transfer into Mantle, first connect a wallet and select the source chain, Mantle as the destination, and the asset and amount. Check that the receiving address is the one you intend to use. The bridge prepares a transaction for the source network; your wallet shows the network and transaction details before you approve it.</p>
+<p>When the source transaction is submitted, its chain records the request. The bridge then passes a message to Mantle, where the destination-side process credits the asset. Think of it as a two-stage handoff: the first chain accepts the parcel, and Mantle records its delivery. The two stages have separate transaction records.</p>
+<p>If your route also needs an asset swap, the <a href="https://mantlebridge.us" rel="noopener">mantle bridge</a> service lets users move and swap crypto assets across different blockchains in one flow. For a simple transfer, choose the same asset on both sides when available; adding a swap introduces another step to check after arrival.</p>
+
+<h2>How do you verify a mantle bridge deposit?</h2>
+<p>Start with the transaction hash shown by your wallet after you approve the source-chain transaction. Open that chain’s block explorer and search the hash. A successful source transaction confirms that the request was recorded there; it does not, by itself, prove the destination balance has updated.</p>
+<p>Then check the Mantle side. Search the receiving address in a Mantle block explorer and inspect its token balances or recent token transfers. Confirm the address, asset and amount. If the token does not appear in the wallet, check the explorer first: the balance may be present even if the wallet is not displaying that token.</p>
+<ul>
+<li>Confirm the source network and destination are the intended chains.</li>
+<li>Compare the receiving address with the one shown in your wallet.</li>
+<li>Look up the source transaction hash and confirm its status.</li>
+<li>Check the destination address for the expected asset and updated balance.</li>
+</ul>
+<p>A pending source transaction has not completed its first step. If the source transaction succeeded but the destination has not updated, use the bridge’s transaction history or status information if available, and keep the source hash for reference. Avoid submitting the transfer again until you understand the first request’s status.</p>
+
+<h2>What changes when you bridge back from Mantle?</h2>
+<p>A withdrawal from Mantle reverses the direction: you initiate it on Mantle, and the destination is the other chain. The source transaction and the eventual destination credit are still separate events. Depending on the route, withdrawal processing can include additional protocol steps or a waiting period, so a successful Mantle transaction does not always mean the funds are immediately spendable on the destination chain.</p>
+<p>Verify the withdrawal the same way: check the Mantle transaction first, then look for the asset at the destination address on the destination chain. Keep the receiving address and transaction hash together until the destination balance changes. The reliable signal of arrival is the asset recorded at that address on the chain where you plan to use it.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/how-to-use-thor-swap-from-your-own-wallet/">How to use thor swap from your own wallet</a></li>
+    <li><a href="/binance-sets-nov-10-cutoff-for-mining-pool-services/">Binance sets Nov. 10 cutoff for mining pool services</a></li>
+    <li><a href="/ledger-ties-confirmed-wallet-drains-to-cryptobilis-reseller/">Ledger Ties Confirmed Wallet Drains to CryptoBilis Reseller</a></li>
+    <li><a href="/xrpl-defends-emergency-fix-for-xrp-overflow-bug/">XRPL defends emergency fix for XRP overflow bug</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
