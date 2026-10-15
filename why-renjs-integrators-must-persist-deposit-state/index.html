@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RenJS Deposit State: Why Integrators Must Save It</title>
+<meta name="description" content="RenJS deposits cross chains and wait for confirmations, signatures and minting; saved state lets an app resume, reconcile and explain each transfer reliably.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why RenJS Integrators Must Persist Deposit State">
+<meta property="og:description" content="RenJS deposits cross chains and wait for confirmations, signatures and minting; saved state lets an app resume, reconcile and explain each transfer reliably.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/why-renjs-integrators-must-persist-deposit-state-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why RenJS Integrators Must Persist Deposit State"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why RenJS Integrators Must Persist Deposit State">
+<meta name="twitter:description" content="RenJS deposits cross chains and wait for confirmations, signatures and minting; saved state lets an app resume, reconcile and explain each transfer reliably.">
+<meta property="article:published_time" content="2026-10-15T14:00:56+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/#webpage",
+      "url": "https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/",
+      "name": "RenJS Deposit State: Why Integrators Must Save It",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/#article",
+      "headline": "Why RenJS Integrators Must Persist Deposit State",
+      "isAccessibleForFree": true,
+      "description": "RenJS deposits cross chains and wait for confirmations, signatures and minting; saved state lets an app resume, reconcile and explain each transfer reliably.",
+      "datePublished": "2026-10-15T14:00:56+00:00",
+      "dateModified": "2026-10-15T14:00:56+00:00",
+      "url": "https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 683,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/why-renjs-integrators-must-persist-deposit-state-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/why-renjs-integrators-must-persist-deposit-state-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/why-renjs-integrators-must-persist-deposit-state-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why RenJS Integrators Must Persist Deposit State",
+          "item": "https://cryptoworldnews.github.io/why-renjs-integrators-must-persist-deposit-state/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">Why RenJS Integrators Must Persist Deposit State</h1>
+<p class="s51c83d6">RenJS deposits cross chains and wait for confirmations, signatures and minting; saved state lets an app resume, reconcile and explain each transfer reliably.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-15T14:00:56+00:00">Oct 15, 2026 · 14:00 UTC</time><span class="s31cfcda">#f1cf78</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/why-renjs-integrators-must-persist-deposit-state.jpg" alt="Why RenJS Integrators Must Persist Deposit State" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>RenJS integrators must persist deposit state because a cross-chain transfer runs through several steps, and a browser session can end before they finish. RenJS creates a gateway for the chosen asset, source chain and destination. The user sends funds into that gateway. The source-chain transaction must confirm; RenVM then processes it and provides the data needed for the destination transaction, such as a mint. The app has to reconnect those steps to the same deposit after a reload, lost connection or device change.</p>
+
+<p>A useful analogy is a parcel with several tracking scans: each scan says where the parcel is, but no single scan completes the trip. RenJS exposes progress as the transfer moves through its stages. The app’s job is to keep enough information to find that transfer again and show what remains. For background on the routes and their present status, see <a href="https://icryptos.mataroa.blog/blog/what-were-the-main-renbridge-routes-and-what-works-now/" rel="noopener">which RenBridge routes still work</a>.</p>
+
+<h2>What does RenJS deposit state contain?</h2>
+
+<p>Deposit state is the information an integrator needs to identify a transfer, reconstruct its RenJS objects and report its progress. It is not a replacement for the source or destination blockchain. Those chains remain the record of submitted transactions; RenJS coordinates the work between them.</p>
+
+<p>In RenJS v2, a deposit flow can expose a gateway address, deposit details, a transaction hash and a status as it advances. The documented statuses include detected, confirmed, signed, submitted and reverted. In v3, gateway and gateway-transaction parameters are serializable, so an integrator can save them and recreate the transaction later. The precise fields vary by version and route, so integrations should follow the API for the RenJS version they use.</p>
+
+<p>At minimum, preserve the transfer’s identifying parameters and the chain transaction identifiers as they become available. Store the selected asset, source and destination details, gateway or transaction parameters, and the source-chain transaction reference. Record progress for the interface, but treat it as a checkpoint: on recovery, query or resume through RenJS and the relevant chain instead of assuming the saved status is still current.</p>
+
+<h2>What breaks when an app loses the deposit state?</h2>
+
+<p>Without saved state, the app may forget which gateway address it showed, lose the reference to a detected deposit or fail to resume a transfer after the source transaction confirms. The user can then see funds leave one chain without a clear explanation of what the destination step needs. The funds may still be traceable on-chain, but the app has lost its map between the source transaction and the remaining work.</p>
+
+<p>Generating a new gateway is not the same as recovering the old one. A new gateway may represent different parameters or a different destination. If the user sent funds to the earlier address, the app must restore the matching transfer details rather than silently start over. This is why persistence is part of the transaction flow, not just a convenience for keeping a progress screen tidy.</p>
+
+<h2>How should an integrator save and resume a deposit?</h2>
+
+<p>Save the transfer record as soon as the gateway is created, then update it when each stage yields new information. Use durable storage tied to the user or session, not only in-memory component state. A practical record tracks:</p>
+
+<ul>
+<li>The RenJS version, network, asset, source and destination.</li>
+<li>The serializable gateway or transaction parameters needed to rebuild the flow.</li>
+<li>The deposit address and source-chain transaction identifier, once known.</li>
+<li>The last observed stage and any destination transaction identifier.</li>
+</ul>
+
+<p>When the user returns, load that record, recreate the gateway or transaction using the version’s supported method, and reconcile its state with current chain data. Keep the saved stage for display, but let fresh observations determine what action is next. Make updates idempotent: seeing the same transaction or event twice should update one transfer record, not create duplicate deposits or submit the destination action twice.</p>
+
+<p>Persisting state does not make confirmations faster or guarantee that a destination transaction succeeds. It makes the work recoverable and the user’s view more accurate. For an integrator, the sound rule is simple: save the parameters that identify the transfer, save each transaction reference, and verify progress again whenever the flow resumes.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/why-a-monero-bridge-transfer-can-stay-pending/">Why a Monero Bridge Transfer Can Stay Pending</a></li>
+    <li><a href="/solana-sets-oct-21-for-alpenglow-consensus-switch/">Solana sets Oct. 21 for Alpenglow consensus switch</a></li>
+    <li><a href="/fairshake-backs-32-house-candidates-after-crypto-bill-stalls/">Fairshake backs 32 House candidates after crypto bill stalls</a></li>
+    <li><a href="/how-a-mantle-bridge-transfer-works-and-how-to-check-it-arrived/">How a Mantle bridge transfer works, and how to check it arrived</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
