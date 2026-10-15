@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remote Lending Market Collateral: Swap and Supply</title>
+<meta name="description" content="To use a remote lending market, move an accepted asset to its chain, swap if needed, then supply it to the market contract before borrowing against it.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Swap Into Collateral for a Remote Lending Market">
+<meta property="og:description" content="To use a remote lending market, move an accepted asset to its chain, swap if needed, then supply it to the market contract before borrowing against it.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/how-to-swap-into-collateral-for-a-remote-lending-market-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Swap Into Collateral for a Remote Lending Market"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Swap Into Collateral for a Remote Lending Market">
+<meta name="twitter:description" content="To use a remote lending market, move an accepted asset to its chain, swap if needed, then supply it to the market contract before borrowing against it.">
+<meta property="article:published_time" content="2026-10-15T23:44:20+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/#webpage",
+      "url": "https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/",
+      "name": "Remote Lending Market Collateral: Swap and Supply",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/#article",
+      "headline": "How to Swap Into Collateral for a Remote Lending Market",
+      "isAccessibleForFree": true,
+      "description": "To use a remote lending market, move an accepted asset to its chain, swap if needed, then supply it to the market contract before borrowing against it.",
+      "datePublished": "2026-10-15T23:44:20+00:00",
+      "dateModified": "2026-10-15T23:44:20+00:00",
+      "url": "https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 686,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-to-swap-into-collateral-for-a-remote-lending-market-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-to-swap-into-collateral-for-a-remote-lending-market-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/how-to-swap-into-collateral-for-a-remote-lending-market-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Swap Into Collateral for a Remote Lending Market",
+          "item": "https://cryptoworldnews.github.io/how-to-swap-into-collateral-for-a-remote-lending-market/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">How to Swap Into Collateral for a Remote Lending Market</h1>
+<p class="s51c83d6">To use a remote lending market, move an accepted asset to its chain, swap if needed, then supply it to the market contract before borrowing against it.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-15T23:44:20+00:00">Oct 15, 2026 · 23:44 UTC</time><span class="s31cfcda">#0d1b61</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/how-to-swap-into-collateral-for-a-remote-lending-market.jpg" alt="How to Swap Into Collateral for a Remote Lending Market" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>To swap into collateral for a remote lending market, move funds to the market’s chain, exchange them for an accepted asset, and supply that asset to the lending contract. Each step has a separate job: a bridge moves value between chains, a swap changes the asset, and the market contract records collateral and manages borrowing. The market can only use the asset after it arrives on the right chain and is supplied.</p>
+
+<h2>What does a remote lending market require?</h2>
+
+<p>A remote lending market requires collateral on the chain where its lending contract runs. The asset in your wallet may be worth the same amount elsewhere, but the contract cannot count it unless the market supports that chain and asset. Remote means the user’s funds start on another chain; it does not mean the lending contract can automatically reach across chains to seize them.</p>
+
+<p>Start by checking the market’s supported network and collateral list. Then check the asset’s loan-to-value limit, or LTV, which sets how much you can borrow against its assessed value. Also check the liquidation threshold: if the contract’s valuation puts your loan above that limit, the market may sell collateral to repay part of the debt. A stablecoin can still lose its peg, and a volatile asset can fall while a loan is open.</p>
+
+<h2>How do the bridge and swap move the funds?</h2>
+
+<p>A bridge carries a transfer instruction from the source chain to the destination chain. Depending on its design, it may lock or burn the original asset and arrange for a corresponding asset to be released or created on the destination. Validators or other verification systems check the transfer, while relayers may pass the resulting message between networks. For the treasury checks that can sit behind a <a href="https://cryptonews-week.com/mayan-bridge-transfers-need-four-treasury-checks/" rel="noopener">mayan bridge</a> transfer, see the fuller explanation. The analogy is a parcel handoff: the bridge tracks the package, but the destination still needs to recognize what arrived.</p>
+
+<p>After the transfer, a swap trades the received token for an asset the lending market accepts. On an automated market maker, the trade draws from a pool of paired tokens, and the price changes as the pool balances shift. An order book instead matches buy and sell orders at available prices. A route may split a trade across pools or tokens, so compare the quoted output and price impact with the amount sent. The bridge transfer and the swap may be separate transactions, or a service may coordinate them into one route; the underlying steps still happen on their respective chains.</p>
+
+<h2>How do you supply collateral and borrow?</h2>
+
+<p>Once the accepted asset is in your destination-chain wallet, approve the market contract to use it, then submit a supply transaction. The approval gives the contract permission to move a specified token amount. The supply call transfers the asset into the market and updates your account’s collateral balance. You can then request a borrow, up to the market’s limit for your collateral and any other assets you have supplied.</p>
+
+<ul>
+<li>Confirm the destination network and the exact token contract address.</li>
+<li>Compare the bridge’s delivered amount and the swap’s expected output with the route’s fees and slippage settings.</li>
+<li>Keep enough destination-chain gas token in your wallet for approvals, supply, and later transactions.</li>
+<li>After supplying, check the market’s displayed collateral and borrowing capacity before taking a loan.</li>
+</ul>
+
+<p>That sequence is the practical test: funds must arrive as the right token, and the lending contract must record them as collateral. A route that completes the bridge and swap but stops before supply has not created borrowing capacity.</p>
+
+<h2>What risks matter before borrowing?</h2>
+
+<p>Bridge failure, a delayed transfer, thin swap liquidity, token price movement, and liquidation can affect different steps. A bridge receipt may also be a wrapped or bridged version of an asset rather than the original token, so verify that the lending market accepts that specific asset. Check the route and market details before signing, and leave a margin below the liquidation threshold rather than borrowing to the maximum. The better choice for most borrowers is the route with a supported asset, clear delivered amount, and enough spare collateral to absorb price changes.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/why-a-bsc-to-arbitrum-swap-needs-gas-on-both-chains/">Why a BSC-to-Arbitrum Swap Needs Gas on Both Chains</a></li>
+    <li><a href="/why-cross-chain-swaps-take-longer-than-the-quote/">Why Cross-Chain Swaps Take Longer Than the Quote</a></li>
+    <li><a href="/why-renjs-integrators-must-persist-deposit-state/">Why RenJS Integrators Must Persist Deposit State</a></li>
+    <li><a href="/why-a-monero-bridge-transfer-can-stay-pending/">Why a Monero Bridge Transfer Can Stay Pending</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
