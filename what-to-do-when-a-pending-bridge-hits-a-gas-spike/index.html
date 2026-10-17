@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pending Bridge Transfer: When Destination Gas Spikes</title>
+<meta name="description" content="A bridge transfer can wait after source funds move because destination execution needs gas; check its stage, fund only the needed fee, and avoid a duplicate send.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What to Do When a Pending Bridge Hits a Gas Spike">
+<meta property="og:description" content="A bridge transfer can wait after source funds move because destination execution needs gas; check its stage, fund only the needed fee, and avoid a duplicate send.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/what-to-do-when-a-pending-bridge-hits-a-gas-spike-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What to Do When a Pending Bridge Hits a Gas Spike"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What to Do When a Pending Bridge Hits a Gas Spike">
+<meta name="twitter:description" content="A bridge transfer can wait after source funds move because destination execution needs gas; check its stage, fund only the needed fee, and avoid a duplicate send.">
+<meta property="article:published_time" content="2026-10-17T06:26:49+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/#webpage",
+      "url": "https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/",
+      "name": "Pending Bridge Transfer: When Destination Gas Spikes",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/#article",
+      "headline": "What to Do When a Pending Bridge Hits a Gas Spike",
+      "isAccessibleForFree": true,
+      "description": "A bridge transfer can wait after source funds move because destination execution needs gas; check its stage, fund only the needed fee, and avoid a duplicate send.",
+      "datePublished": "2026-10-17T06:26:49+00:00",
+      "dateModified": "2026-10-17T06:26:49+00:00",
+      "url": "https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 784,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/what-to-do-when-a-pending-bridge-hits-a-gas-spike-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/what-to-do-when-a-pending-bridge-hits-a-gas-spike-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/what-to-do-when-a-pending-bridge-hits-a-gas-spike-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What to Do When a Pending Bridge Hits a Gas Spike",
+          "item": "https://cryptoworldnews.github.io/what-to-do-when-a-pending-bridge-hits-a-gas-spike/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">What to Do When a Pending Bridge Hits a Gas Spike</h1>
+<p class="s51c83d6">A bridge transfer can wait after source funds move because destination execution needs gas; check its stage, fund only the needed fee, and avoid a duplicate send.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-17T06:26:49+00:00">Oct 17, 2026 · 06:26 UTC</time><span class="s31cfcda">#d81eaa</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/what-to-do-when-a-pending-bridge-hits-a-gas-spike.jpg" alt="What to Do When a Pending Bridge Hits a Gas Spike" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>A pending bridge transfer can often be completed by paying the destination chain’s required gas, but first check whether the transfer has reached that step. A bridge usually moves value in stages: a source-chain contract locks or burns the tokens, validators or another messaging system attest to that event, then a destination-chain contract releases or mints the corresponding tokens. The destination transaction needs gas, the chain’s fee for processing it. If gas prices rise before that transaction runs, the transfer can wait even though the source transaction succeeded.</p>
+
+<p>That waiting transfer is not necessarily a failed transfer or a balance you can spend yet. Think of it like a parcel that has left one depot but still needs a delivery fee at the next. The useful question is which stage has stopped. A source transaction still pending needs a different response from a message that is ready for destination execution.</p>
+
+<h2>Why is my bridge transfer pending?</h2>
+
+<p>Start with the bridge’s status page or transaction tracker, and compare it with the source-chain transaction in a block explorer. Look for separate records: the source transaction hash, confirmation status, message or transfer identifier, and destination execution status. Names differ between bridges, but the distinction matters. If the source transaction has not confirmed, the bridge may not have a message to relay. If it has confirmed and the bridge reports a message awaiting execution, destination gas may be the blocker.</p>
+
+<p>In a relay bridge, a relayer may submit the destination transaction, while the bridge’s contracts check that the source event is valid. The relayer pays gas to submit that transaction, and the bridge’s fee design determines who ultimately covers the cost. Some systems require the sender to pay a destination fee up front; others provide a way to add or reimburse the execution fee later. For a concrete account of how frequent users handle a destination gas shortfall, see <a href="https://marcus-king-weissnat-hldg3sdqdlldxh4xnu8iy.justblogged.com/relay-bridge-frequent-traders-short-destination-gas" rel="noopener">how relay bridge traders cover gas</a>. The important detail is whether your specific transfer can be resumed and what fee mechanism it supports.</p>
+
+<h2>What should I do while the transfer waits?</h2>
+
+<p>Use the bridge’s own tracker and instructions for the exact transfer. Confirm that the destination address is yours, that the message is marked ready for execution, and that the proposed fee applies to this transfer. A gas spike can make a fee estimate stale. Check the current estimate immediately before acting, and compare it with the value you are trying to move. Paying a high fee may be reasonable when it completes a valuable transfer; waiting can be better when the fee is disproportionate and the bridge lets you retry later.</p>
+
+<ul>
+<li>If the source transaction is still pending, check its status and the wallet’s options before submitting anything else.</li>
+<li>If the source transaction confirmed but the message is not ready, wait for the bridge’s stated verification or relay step.</li>
+<li>If the message is ready, use the supported resume, claim, or fee top-up action for that transfer.</li>
+<li>If the tracker shows completion, check the destination wallet and token network before trying again.</li>
+</ul>
+
+<p>Do not send the same amount a second time just because the destination balance has not appeared. The original message may still execute, leaving you with two transfers. Also avoid using a random site or message that offers to “unstick” the transfer. Use the bridge interface you started with, and verify the transaction details in your wallet before signing. A destination transaction normally needs gas in that destination chain’s native fee token; the bridged asset itself may not pay the network fee.</p>
+
+<h2>When should I wait or contact support?</h2>
+
+<p>Wait if the bridge shows that verification or relaying is still underway and gives no action to take. The source event may need more confirmations, or the bridge’s relayer may be delayed. Keep the transaction hashes and transfer identifier so you can check whether the status changes. Do not assume that a slow relay means the source funds have been lost; the bridge’s records determine whether the message exists and whether it can be executed.</p>
+
+<p>Contact the bridge’s support channel if its tracker contradicts the chain records, the transfer exceeds the stated processing window, or the supported retry action fails. Share transaction identifiers, not wallet seed phrases or private keys. If you control a supported manual execution route, use it only when the bridge documents that route for the transfer. Otherwise, wait for the bridge’s retry process or get help identifying the stuck stage.</p>
+
+<p>The practical rule is simple: verify the source, identify the message stage, then pay destination gas only through the bridge’s supported path. A pending status describes a step that has not finished; it does not by itself tell you which step needs action.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/coinbase-and-marqeta-link-stablecoins-to-business-payment-cards/">Coinbase and Marqeta link stablecoins to business payment cards</a></li>
+    <li><a href="/destination-coin-or-output-token-what-unsticks-a-swap/">Destination Coin or Output Token: What Unsticks a Swap?</a></li>
+    <li><a href="/three-pool-checks-before-a-cross-chain-swap/">Three Pool Checks Before a Cross-Chain Swap</a></li>
+    <li><a href="/destination-execution-failure-after-bridging-explained/">Destination Execution Failure After Bridging Explained</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
