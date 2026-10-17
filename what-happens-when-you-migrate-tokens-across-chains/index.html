@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Token Migration Across Chains Works | Merkle Street</title>
+<meta name="description" content="A token bridge locks or burns assets on one chain, verifies the transfer, then releases or mints tokens on another, with fees and trust risks to weigh.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What Happens When You Migrate Tokens Across Chains?">
+<meta property="og:description" content="A token bridge locks or burns assets on one chain, verifies the transfer, then releases or mints tokens on another, with fees and trust risks to weigh.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/what-happens-when-you-migrate-tokens-across-chains-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What Happens When You Migrate Tokens Across Chains?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Happens When You Migrate Tokens Across Chains?">
+<meta name="twitter:description" content="A token bridge locks or burns assets on one chain, verifies the transfer, then releases or mints tokens on another, with fees and trust risks to weigh.">
+<meta property="article:published_time" content="2026-10-17T08:05:58+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/#webpage",
+      "url": "https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/",
+      "name": "How Token Migration Across Chains Works | Merkle Street",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/#article",
+      "headline": "What Happens When You Migrate Tokens Across Chains?",
+      "isAccessibleForFree": true,
+      "description": "A token bridge locks or burns assets on one chain, verifies the transfer, then releases or mints tokens on another, with fees and trust risks to weigh.",
+      "datePublished": "2026-10-17T08:05:58+00:00",
+      "dateModified": "2026-10-17T08:05:58+00:00",
+      "url": "https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 754,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/what-happens-when-you-migrate-tokens-across-chains-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/what-happens-when-you-migrate-tokens-across-chains-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/what-happens-when-you-migrate-tokens-across-chains-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What Happens When You Migrate Tokens Across Chains?",
+          "item": "https://cryptoworldnews.github.io/what-happens-when-you-migrate-tokens-across-chains/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">What Happens When You Migrate Tokens Across Chains?</h1>
+<p class="s51c83d6">A token bridge locks or burns assets on one chain, verifies the transfer, then releases or mints tokens on another, with fees and trust risks to weigh.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-17T08:05:58+00:00">Oct 17, 2026 · 08:05 UTC</time><span class="s31cfcda">#879dde</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/what-happens-when-you-migrate-tokens-across-chains.jpg" alt="What Happens When You Migrate Tokens Across Chains?" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>When you migrate tokens across chains, a bridge records an action on the source chain and uses proof of that action to deliver an asset on the destination chain. The two blockchains do not share a balance or automatically know what happened on each other. A bridge connects them through contracts, validators or other verification systems, and a destination transaction.</p>
+
+<p>First, you choose a source chain, destination chain, token and amount. The bridge interface builds a transaction for your wallet to sign. That transaction may include a fee and an address for the destination wallet. Once submitted, the source chain’s validators include it in a block. The bridge contract then locks or burns the tokens, depending on its design.</p>
+
+<h2>What happens after tokens leave the source chain?</h2>
+
+<p>The bridge waits for evidence that the source transaction happened. In one design, a set of validators or an oracle checks the source chain and attests to the transfer. In another, the destination chain can verify source-chain data through its own protocol. The bridge’s contracts use that evidence to decide whether a destination action is allowed.</p>
+
+<p>For a closer look at how execution and delivery can differ in a swap, <a href="https://aeternasol.org/biswap-how-cross-chain-swaps-settle-and-what-you-receive/" rel="noopener">Biswap’s explanation of cross-chain swap settlement</a> follows the steps through to what the recipient gets. The key point is that a source-chain transaction is only the beginning: the destination side still needs to accept and process a message.</p>
+
+<p>In a lock-and-mint bridge, the original tokens stay in a source-chain contract, and a corresponding representation is minted on the destination chain. In a burn-and-mint design, tokens are destroyed on the source side and an equivalent amount is minted on the destination. A liquidity-based route can work differently: a provider pays out tokens on the destination chain and later settles the source-side transfer.</p>
+
+<h2>Are the tokens on the destination chain the same asset?</h2>
+
+<p>They may represent the same value, but they are not necessarily the same token contract. A wrapped or bridged token is a separate asset on the destination chain, supported by the bridge’s rules and backing. Its ticker or logo may resemble the original, so check the contract address and the bridge route before using it.</p>
+
+<p>Think of a bridge as a claim ticket: one system records what was deposited, and another honors the ticket after checking the record. The analogy stops there. In a real bridge, the claim depends on software and verification rules, and those can differ from one route to another.</p>
+
+<p>Some token issuers also deploy their own token contracts on multiple chains and authorize a bridge to burn tokens on one chain and mint them on another. That can preserve the issuer’s intended token identity across networks. It still depends on the bridge’s permissions and on each chain processing the transactions correctly.</p>
+
+<h2>Why can a token migration take time or cost more?</h2>
+
+<p>Each chain processes its own transactions. The source transaction pays that chain’s network fee; the destination transaction may require another fee, paid directly or deducted from the transfer. The bridge may also charge a service fee. Processing time depends on source-chain confirmation, the bridge’s verification method, destination-chain congestion and whether a liquidity provider is available.</p>
+
+<p>A route that uses a liquidity provider may deliver quickly because the provider already holds assets on the destination chain. A route that waits for more source-chain confirmations can take longer, but gives the bridge time to establish that the source transaction is unlikely to be reversed. There is no single timing or fee rule for all bridges.</p>
+
+<h2>What should you check before migrating tokens?</h2>
+
+<p>Check the route’s exact source and destination networks, the token contract on the receiving chain, the amount expected after fees and whether you need the destination chain’s native token to pay for later transactions. A migration can complete while leaving you with an asset that your intended app does not support.</p>
+
+<ul>
+<li>Confirm the network names and wallet address on both sides.</li>
+<li>Check whether the destination token is native, wrapped or issued by the project.</li>
+<li>Read the route’s fee and minimum or maximum transfer rules.</li>
+<li>Keep the transaction identifier so you can follow the source and destination steps.</li>
+</ul>
+
+<p>Bridge security depends on more than the token contract. It also depends on who or what verifies transfers, which contracts can lock, release, burn or mint assets, and how failures are handled. For most users, the better route is the one whose token representation and verification model they understand, with a transfer amount they can afford to have delayed while the destination transaction settles.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/what-to-do-when-a-pending-bridge-hits-a-gas-spike/">What to Do When a Pending Bridge Hits a Gas Spike</a></li>
+    <li><a href="/coinbase-and-marqeta-link-stablecoins-to-business-payment-cards/">Coinbase and Marqeta link stablecoins to business payment cards</a></li>
+    <li><a href="/destination-coin-or-output-token-what-unsticks-a-swap/">Destination Coin or Output Token: What Unsticks a Swap?</a></li>
+    <li><a href="/three-pool-checks-before-a-cross-chain-swap/">Three Pool Checks Before a Cross-Chain Swap</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
