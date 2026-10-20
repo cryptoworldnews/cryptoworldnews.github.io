@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>acrossbridge: How transfers work and recover in 2026</title>
+<meta name="description" content="Acrossbridge sends funds through a deposit, a relayer fill and later settlement; learn what each step means and how to check a delayed or expired transfer.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="acrossbridge in 2026: How transfers work and get unstuck">
+<meta property="og:description" content="Acrossbridge sends funds through a deposit, a relayer fill and later settlement; learn what each step means and how to check a delayed or expired transfer.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/acrossbridge-in-2026-how-transfers-work-and-get-unstuck-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="acrossbridge in 2026: How transfers work and get unstuck"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="acrossbridge in 2026: How transfers work and get unstuck">
+<meta name="twitter:description" content="Acrossbridge sends funds through a deposit, a relayer fill and later settlement; learn what each step means and how to check a delayed or expired transfer.">
+<meta property="article:published_time" content="2026-10-20T14:37:34+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/#webpage",
+      "url": "https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/",
+      "name": "acrossbridge: How transfers work and recover in 2026",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/#article",
+      "headline": "acrossbridge in 2026: How transfers work and get unstuck",
+      "isAccessibleForFree": true,
+      "description": "Acrossbridge sends funds through a deposit, a relayer fill and later settlement; learn what each step means and how to check a delayed or expired transfer.",
+      "datePublished": "2026-10-20T14:37:34+00:00",
+      "dateModified": "2026-10-20T14:37:34+00:00",
+      "url": "https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 703,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/acrossbridge-in-2026-how-transfers-work-and-get-unstuck-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/acrossbridge-in-2026-how-transfers-work-and-get-unstuck-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/acrossbridge-in-2026-how-transfers-work-and-get-unstuck-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "acrossbridge in 2026: How transfers work and get unstuck",
+          "item": "https://cryptoworldnews.github.io/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">acrossbridge in 2026: How transfers work and get unstuck</h1>
+<p class="s51c83d6">Acrossbridge sends funds through a deposit, a relayer fill and later settlement; learn what each step means and how to check a delayed or expired transfer.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-20T14:37:34+00:00">Oct 20, 2026 · 14:37 UTC</time><span class="s31cfcda">#5f79af</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/acrossbridge-in-2026-how-transfers-work-and-get-unstuck.jpg" alt="acrossbridge in 2026: How transfers work and get unstuck" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>Acrossbridge moves tokens between chains by recording a deposit on the source chain, having a relayer deliver funds on the destination chain, then settling accounts later. The sender chooses the amount, destination and recipient. A SpokePool contract records those instructions. Relayers watch for the deposit and one can fill it by paying out its own tokens on the destination chain. The recipient usually gets funds before that relayer is repaid.</p>
+
+<p>The design is an intent: the user states the result they want, while the relayer handles the immediate delivery. For a plain transfer, the desired result is tokens for a recipient on another chain. The <a href="https://acrossbridge.dev" rel="noopener">acrossbridge</a> transfer still depends on the source transaction being confirmed and the destination chain processing its fill. Those are separate events, so a confirmed deposit does not by itself prove the recipient has been paid.</p>
+
+<h2>How does an acrossbridge transfer work?</h2>
+
+<p>An acrossbridge transfer starts when the wallet submits a transaction to the source chain’s SpokePool. That contract holds the deposit information: input token and amount, destination chain, output token and amount, recipient, and a deadline for the fill. The wallet may also need to approve the contract to use the tokens.</p>
+
+<p>After the source transaction confirms, relayers can see the deposit. A relayer checks whether it can fill the order, then calls the destination chain’s SpokePool and fronts the output tokens to the recipient. Relayers compete to fill eligible orders. This is why the recipient can receive funds quickly without waiting for the protocol’s accounts to be balanced across chains.</p>
+
+<p>Settlement happens afterward. Across groups fills and other activity into a bundle. The protocol uses that settlement process to reimburse relayers and move liquidity between its pools. Think of the relayer as paying the recipient from a till on the destination chain, then collecting from the wider ledger later. The analogy stops there: the actual process uses on-chain contracts, proofs and transactions.</p>
+
+<h2>Why can a transfer stay pending?</h2>
+
+<p>A pending transfer means the deposit has not yet reached a completed status; it does not identify the cause on its own. First, check the source transaction on the source chain’s block explorer. If it is pending or failed there, the deposit has not been successfully recorded. If it confirmed, use the deposit transaction hash or deposit ID to check Across’s status tracker.</p>
+
+<p>A relayer may not have filled the order yet. Unusual routes, large amounts or temporary relayer unavailability can leave a deposit waiting. The fill deadline also matters: if it passes without a fill, the deposit may become eligible for a refund. Check the status before sending again, since a second deposit is a separate transaction and can result in a second transfer.</p>
+
+<p>Use the status to decide what to do next:</p>
+
+<ul>
+<li><strong>Pending:</strong> Confirm the source transaction succeeded, then keep checking the transfer status.</li>
+<li><strong>Filled:</strong> Look up the destination transaction and confirm that the recipient and output token are correct.</li>
+<li><strong>Expired:</strong> The fill deadline passed. The refund still needs settlement processing, so it may take several hours rather than arriving immediately.</li>
+<li><strong>Refunded:</strong> Check the refund transaction and the address set to receive it, which may differ from the recipient.</li>
+</ul>
+
+<h2>What should you do if funds seem stuck?</h2>
+
+<p>Follow the transaction through both chains before taking action. Keep the source transaction hash, destination chain, recipient address and deposit ID together. Compare the recipient and token in the deposit with the wallet where you expect to see the funds. A transfer can be filled to the specified recipient while the sender is checking a different address.</p>
+
+<p>If the source transaction confirmed but the tracker does not show the deposit, allow time for indexing, then check the transaction receipt and its contract events. If the status says expired, wait for the refund process and check the designated refund address. Do not share a seed phrase or private key with anyone offering to recover funds; neither is needed to check a transaction.</p>
+
+<p>The key distinction is between delivery and settlement. A relayer can deliver tokens on the destination chain before it receives reimbursement, while an expired deposit follows a slower refund path. Checking the source transaction, current status and destination or refund address shows which part of the process needs attention.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/five-checks-before-a-multisig-bridge-transfer/">Five Checks Before a Multisig Bridge Transfer</a></li>
+    <li><a href="/circle-says-usdc-partners-get-59-cents-of-each-revenue-dollar/">Circle says USDC partners get 59 cents of each revenue dollar</a></li>
+    <li><a href="/qubic-halts-chain-after-1-404-wallets-lose-1-4-million/">Qubic halts chain after 1,404 wallets lose $1.4 million</a></li>
+    <li><a href="/ledger-reviews-reseller-controls-after-wallet-implant-thefts/">Ledger reviews reseller controls after wallet implant thefts</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
