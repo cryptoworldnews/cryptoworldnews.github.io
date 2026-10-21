@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>syncswap integration: pools, routing and execution</title>
+<meta name="description" content="SyncSwap gives integrators access to several pool models through contracts and a router; the work is choosing a route, checking its cost and submitting it safely.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="SyncSwap for Integrators: From Pool Lookup to Swap">
+<meta property="og:description" content="SyncSwap gives integrators access to several pool models through contracts and a router; the work is choosing a route, checking its cost and submitting it safely.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/syncswap-for-integrators-from-pool-lookup-to-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SyncSwap for Integrators: From Pool Lookup to Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SyncSwap for Integrators: From Pool Lookup to Swap">
+<meta name="twitter:description" content="SyncSwap gives integrators access to several pool models through contracts and a router; the work is choosing a route, checking its cost and submitting it safely.">
+<meta property="article:published_time" content="2026-10-21T08:17:06+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/#webpage",
+      "url": "https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/",
+      "name": "syncswap integration: pools, routing and execution",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/#article",
+      "headline": "SyncSwap for Integrators: From Pool Lookup to Swap",
+      "isAccessibleForFree": true,
+      "description": "SyncSwap gives integrators access to several pool models through contracts and a router; the work is choosing a route, checking its cost and submitting it safely.",
+      "datePublished": "2026-10-21T08:17:06+00:00",
+      "dateModified": "2026-10-21T08:17:06+00:00",
+      "url": "https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 741,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/syncswap-for-integrators-from-pool-lookup-to-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/syncswap-for-integrators-from-pool-lookup-to-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/syncswap-for-integrators-from-pool-lookup-to-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SyncSwap for Integrators: From Pool Lookup to Swap",
+          "item": "https://cryptoworldnews.github.io/syncswap-for-integrators-from-pool-lookup-to-swap/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">SyncSwap for Integrators: From Pool Lookup to Swap</h1>
+<p class="s51c83d6">SyncSwap gives integrators access to several pool models through contracts and a router; the work is choosing a route, checking its cost and submitting it safely.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-10-21T08:17:06+00:00">Oct 21, 2026 · 08:17 UTC</time><span class="s31cfcda">#c9529b</span><span>4 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/syncswap-for-integrators-from-pool-lookup-to-swap.jpg" alt="SyncSwap for Integrators: From Pool Lookup to Swap" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>SyncSwap is a decentralized exchange protocol that lets an integrator route token swaps through liquidity pools deployed on supported networks. The process starts with a token pair and amount, finds a suitable pool or path, checks the expected output and fees, then sends a transaction through the router. For an application, syncswap is a set of onchain components to connect, not one contract that handles every decision.</p>
+
+<p>The first step is identifying the network and the deployed contracts there. A pool factory creates pools of a particular type, then registers each new pool with Pool Master, which acts as a directory of pools and factories. An integrator can use Pool Master to look up pools for a pair of tokens and inspect which pool model they use. Contract addresses should come from the deployment records for the target network, rather than being copied from another chain.</p>
+
+<h2>How does syncswap route a token swap?</h2>
+
+<p>A swap begins with the input token, output token and amount. The integrator checks available pools and estimates the output for each possible route. A direct route uses one pool. A multi-hop route passes through an intermediate token when that produces a better result. A router coordinates the chosen pool calls and the movement of tokens, so the application can present one swap action to the user.</p>
+
+<p>Think of the pools as counters offering different exchange rates, and the router as the cashier carrying out the selected sequence. The analogy stops there: each pool calculates its output from its own rules and current reserves, and the final result is enforced by contract code. A quote can change before execution as pool balances and prices move.</p>
+
+<p>An integrator can refer to <a href="https://syncswap.dev" rel="noopener">syncswap</a> while mapping the protocol into its application. In practice, the interface or backend prepares the route and quote, while the wallet signs a transaction that calls the relevant contracts. The user’s token approval allows the swap to use the input asset; the transaction also specifies a minimum acceptable output so it can revert if execution falls below that limit.</p>
+
+<h2>What do SyncSwap’s pool types change?</h2>
+
+<p>Pool type determines how a pool prices a trade, so it affects which route fits the tokens. SyncSwap documents three types: Classic, Stable and Aqua. Classic pools use a constant product curve suited to general trading. Stable pools use a curve designed for assets expected to trade near the same value. Aqua pools use a dynamic hybrid curve with an auto-rebalancing mechanism for volatile assets and liquid staking tokens.</p>
+
+<p>These are different pricing models, not interchangeable labels. A stable pair may get a more suitable quote from a Stable pool, while a volatile pair may be better served by another pool type. An integrator should compare the estimated output and fee for the available routes instead of assuming that the pool with the most familiar name is best.</p>
+
+<h2>Which fees and details should an integrator check?</h2>
+
+<p>Fees come from the pool and its fee configuration. The Fee Manager stores default and custom swap fees, and Pool Master provides access to the current Fee Manager address. That address can change, so an integration should resolve it through the documented contract relationship instead of treating it as permanent. Fee data can include minimum and maximum fees plus a gamma value; Aqua pools support dynamic fees, while Classic and Stable pools generally use fixed fees.</p>
+
+<ul>
+<li>Confirm the network, token addresses and deployed contract addresses.</li>
+<li>Look up pools through Pool Master and account for the pool type.</li>
+<li>Refresh fee data and quotes as part of preparing each swap.</li>
+<li>Set a minimum output and make the recipient explicit in the transaction.</li>
+</ul>
+
+<h2>What is the practical trade-off for integrators?</h2>
+
+<p>Using the protocol’s contracts directly gives an integrator control over the route and transaction, but it also means maintaining address discovery, fee handling, quoting and transaction construction. A software development kit can simplify some application-side work, but it does not remove the need to validate the network, quote and transaction parameters. The useful division is clear: pool contracts price and execute trades, Pool Master helps discover pools and related contracts, and the integrator decides how to present and submit a route.</p>
+
+<p>For most applications, the sound starting point is to fetch current pool and fee data, compare routes, then submit with a clear minimum output and recipient. That makes SyncSwap’s moving parts visible to both the application and its user, while leaving the pool contracts to enforce the trade.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/acrossbridge-in-2026-how-transfers-work-and-get-unstuck/">acrossbridge in 2026: How transfers work and get unstuck</a></li>
+    <li><a href="/five-checks-before-a-multisig-bridge-transfer/">Five Checks Before a Multisig Bridge Transfer</a></li>
+    <li><a href="/circle-says-usdc-partners-get-59-cents-of-each-revenue-dollar/">Circle says USDC partners get 59 cents of each revenue dollar</a></li>
+    <li><a href="/qubic-halts-chain-after-1-404-wallets-lose-1-4-million/">Qubic halts chain after 1,404 wallets lose $1.4 million</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
