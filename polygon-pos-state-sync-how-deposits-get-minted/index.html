@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Bridged Tokens Arrive on Polygon Without Gas: Bor Mint</title>
+<meta name="description" content="Why bridged tokens arrive on Polygon without paying gas: Heimdall validators relay the Ethereum event, then Bor mints your deposit by system call.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Polygon PoS State Sync: How Deposits Get Minted">
+<meta property="og:description" content="Why bridged tokens arrive on Polygon without paying gas: Heimdall validators relay the Ethereum event, then Bor mints your deposit by system call.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/polygon-pos-state-sync-how-deposits-get-minted-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Polygon PoS State Sync: How Deposits Get Minted"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Polygon PoS State Sync: How Deposits Get Minted">
+<meta name="twitter:description" content="Why bridged tokens arrive on Polygon without paying gas: Heimdall validators relay the Ethereum event, then Bor mints your deposit by system call.">
+<meta property="article:published_time" content="2026-11-21T03:21:17+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/#webpage",
+      "url": "https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/",
+      "name": "Why Bridged Tokens Arrive on Polygon Without Gas: Bor Mint",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/#article",
+      "headline": "Polygon PoS State Sync: How Deposits Get Minted",
+      "isAccessibleForFree": true,
+      "description": "Why bridged tokens arrive on Polygon without paying gas: Heimdall validators relay the Ethereum event, then Bor mints your deposit by system call.",
+      "datePublished": "2026-11-21T03:21:17+00:00",
+      "dateModified": "2026-11-21T03:21:17+00:00",
+      "url": "https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 575,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/polygon-pos-state-sync-how-deposits-get-minted-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/polygon-pos-state-sync-how-deposits-get-minted-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/polygon-pos-state-sync-how-deposits-get-minted-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Polygon PoS State Sync: How Deposits Get Minted",
+          "item": "https://cryptoworldnews.github.io/polygon-pos-state-sync-how-deposits-get-minted/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">Polygon PoS State Sync: How Deposits Get Minted</h1>
+<p class="s51c83d6">Why bridged tokens arrive on Polygon without paying gas: Heimdall validators relay the Ethereum event, then Bor mints your deposit by system call.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-11-21T03:21:17+00:00">Nov 21, 2026 · 03:21 UTC</time><span class="s31cfcda">#b42144</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/polygon-pos-state-sync-how-deposits-get-minted.jpg" alt="Polygon PoS State Sync: How Deposits Get Minted" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>A Polygon PoS deposit can appear in your wallet without a Polygon gas payment because Bor mints it through a protocol system call, not a transaction signed by you.</p>
+<h2>From Ethereum deposit to Polygon balance</h2>
+<p>A Polygon PoS deposit reaches your address through three steps: an Ethereum event, validator agreement, and a Bor system call. The deposit transaction is the only one you sign and pay for.</p>
+<ol>
+<li><p>On Ethereum, your deposit transaction calls RootChainManager. The deposit emits a StateSynced event through the StateSender contract. That event carries the information Polygon needs to process the deposit, including where the tokens should arrive.</p></li>
+<li><p>Heimdall validators observe the StateSynced event and agree on it. Once a supermajority agrees, Heimdall records the event for Polygon’s block producers to apply. Your wallet does not submit a second transaction to ask for the mint.</p></li>
+<li><p>At the start of a Bor sprint, Bor makes a system call to the StateReceiver genesis contract at 0x…1001. StateReceiver passes the message to ChildChainManager, which mints the tokens to the destination address on Polygon.</p></li>
+</ol>
+<p>Think of the event as a deposit instruction that validators verify before Bor carries it out. The analogy stops there: the actual work is done by these named contracts and protocol components, not by a person forwarding a message or paying a separate Polygon fee.</p>
+<p>This explains the difference between a deposit being included and the tokens arriving. Ethereum inclusion means your paid transaction and its event are on Ethereum. Arrival means Heimdall has recorded that event and Bor has applied it, so the balance appears on Polygon. Treating those as the same moment can make a deposit look stuck when it is simply waiting for the next steps.</p>
+<h2>Why higher Ethereum gas cannot speed up the mint</h2>
+<p>Higher Ethereum gas can help your deposit transaction get included sooner, but it cannot buy faster Heimdall agreement or a Bor sprint. Gas affects the first step: inclusion of your transaction on Ethereum. After the StateSynced event exists, Polygon’s own sequence controls when the mint happens.</p>
+<p>Say you raise the Ethereum fee to get a supported token deposit included quickly. That can move the event onto Ethereum sooner. It does not make validators record the event sooner once their agreement is needed, or make Bor apply it outside its block production. The wait after Ethereum inclusion is therefore different from a slow Ethereum transaction, and paying more on Ethereum does not remove it.</p>
+<p>This is why no Polygon gas is charged to your wallet for the deposit mint. The protocol applies the verified event as part of Bor’s work; your wallet has not sent a Polygon transaction that needs its own gas payment. Withdrawals work differently: you pay Polygon gas to burn tokens, then Ethereum gas to claim them there.</p>
+<h2>Related</h2>
+<h3>How long does a deposit to Polygon take to arrive?</h3>
+<p>A deposit arrives after its Ethereum transaction is included, Heimdall validators agree on the StateSynced event, and Bor applies it during a sprint. The wait after Ethereum inclusion depends on those later protocol steps, so a higher Ethereum fee only affects how quickly the first step happens.</p>
+<h3>Where does a state sync appear on Polygonscan?</h3>
+<p>On Polygonscan, look for the destination-side token transfer to your address; the StateSynced event itself is emitted on Ethereum. The <a href="https://qiita.com/mackw/items/c95ba951e580193fe5c9" rel="noopener">Polygon bridge</a> is a concrete example of this deposit path because its Polygon PoS deposits use state sync to carry the verified Ethereum event into Bor’s minting process.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/dbs-and-circle-open-24-7-usdc-access-to-institutions-in-asia/">DBS and Circle open 24/7 USDC access to institutions in Asia</a></li>
+    <li><a href="/us-wins-authority-to-seize-1-2bn-in-binance-theft/">US wins authority to seize $1.2bn in Binance theft</a></li>
+    <li><a href="/how-to-tell-if-my-swap-was-sandwich-attacked-spot-the-pattern/">How to tell if my swap was sandwich attacked: spot the pattern</a></li>
+    <li><a href="/common-mistakes-when-bridging-crypto-a-pre-signing-checklist/">Common mistakes when bridging crypto: a pre-signing checklist</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
