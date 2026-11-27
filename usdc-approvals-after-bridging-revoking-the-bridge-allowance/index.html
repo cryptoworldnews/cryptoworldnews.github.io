@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to revoke token approval after bridging USDC: zero it</title>
+<meta name="description" content="To revoke a token approval after bridging USDC, find the bridge spender on Ethereum or Base and reset its allowance to zero; check first to avoid needless gas.">
+<link rel="canonical" href="https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#12140e">
+<meta name="author" content="Merkle Street Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Merkle Street">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="USDC approvals after bridging: revoking the bridge allowance">
+<meta property="og:description" content="To revoke a token approval after bridging USDC, find the bridge spender on Ethereum or Base and reset its allowance to zero; check first to avoid needless gas.">
+<meta property="og:url" content="https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/">
+<meta property="og:image" content="https://cryptoworldnews.github.io/assets/covers/usdc-approvals-after-bridging-revoking-the-bridge-allowance-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="USDC approvals after bridging: revoking the bridge allowance"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="USDC approvals after bridging: revoking the bridge allowance">
+<meta name="twitter:description" content="To revoke a token approval after bridging USDC, find the bridge spender on Ethereum or Base and reset its allowance to zero; check first to avoid needless gas.">
+<meta property="article:published_time" content="2026-11-27T22:48:20+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Azeret+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sad24a5b2a2.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Merkle Street" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cryptoworldnews.github.io/#org",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://cryptoworldnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://cryptoworldnews.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cryptoworldnews.github.io/#website",
+      "name": "Merkle Street",
+      "url": "https://cryptoworldnews.github.io/",
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Merkle Street reports crypto news on Bitcoin, Ethereum, layer 2s, DeFi, stablecoins, exchanges, regulation, security incidents and protocol upgrades."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/#webpage",
+      "url": "https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/",
+      "name": "How to revoke token approval after bridging USDC: zero it",
+      "isPartOf": {
+        "@id": "https://cryptoworldnews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/#article",
+      "headline": "USDC approvals after bridging: revoking the bridge allowance",
+      "isAccessibleForFree": true,
+      "description": "To revoke a token approval after bridging USDC, find the bridge spender on Ethereum or Base and reset its allowance to zero; check first to avoid needless gas.",
+      "datePublished": "2026-11-27T22:48:20+00:00",
+      "dateModified": "2026-11-27T22:48:20+00:00",
+      "url": "https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/",
+      "mainEntityOfPage": {
+        "@id": "https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://cryptoworldnews.github.io/#org"
+      },
+      "wordCount": 596,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/usdc-approvals-after-bridging-revoking-the-bridge-allowance-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/usdc-approvals-after-bridging-revoking-the-bridge-allowance-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://cryptoworldnews.github.io/assets/covers/usdc-approvals-after-bridging-revoking-the-bridge-allowance-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cryptoworldnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "USDC approvals after bridging: revoking the bridge allowance",
+          "item": "https://cryptoworldnews.github.io/usdc-approvals-after-bridging-revoking-the-bridge-allowance/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s36ff4ad" href="#main">Skip to main content</a>
+<header class="s46236ec">
+  <div class="sd4a94a9">
+    <a class="s9b74b7b" href="/">Merkle Street</a>
+    <p class="s2ba6025">Protocols, markets, policy, people</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s6de751b sbea87a8">
+  <header class="s30ccdf9">
+    <h1 class="s83b4733">USDC approvals after bridging: revoking the bridge allowance</h1>
+<p class="s51c83d6">To revoke a token approval after bridging USDC, find the bridge spender on Ethereum or Base and reset its allowance to zero; check first to avoid needless gas.</p>    <p class="seb3c71e"><span>Merkle Street Newsroom</span><time datetime="2026-11-27T22:48:20+00:00">Nov 27, 2026 · 22:48 UTC</time><span class="s31cfcda">#47cb02</span><span>3 min read</span></p>
+  </header>
+  <figure class="sc57df8c">
+    <img fetchpriority="high" class="s36061de" src="/assets/covers/usdc-approvals-after-bridging-revoking-the-bridge-allowance.jpg" alt="USDC approvals after bridging: revoking the bridge allowance" width="1200" height="630">
+  </figure>
+  <div class="s68ed938"><p>After a USDC transfer, you can revoke a leftover ERC-20 approval by finding the bridge contract’s allowance on the chain where you approved it and resetting it to zero. Check the allowance first: an exact-amount approval may already be spent.</p>
+<ul>
+<li>Approvals belong to a specific token and chain.</li>
+<li>A zero allowance needs no action; a remaining or unlimited allowance can be revoked.</li>
+<li>Revoking requires a wallet confirmation and gas on that chain.</li>
+</ul>
+<h2>How do you check a USDC bridge allowance?</h2>
+<p>A USDC bridge allowance is the amount of USDC your wallet let a bridge contract move on one chain. Open Revoke.cash, or the Token Approval Checker for that chain’s explorer: Etherscan for Ethereum or Basescan for Base. Connect your wallet or paste its public address, then select the chain where you approved the bridge.</p>
+<p>A Base bridge transfer moves supported assets between Ethereum and Base, but the allowance is recorded where you granted it. The linked <a href="https://onchainnotes.pages.dev/base-bridge-options-for-getting-crypto-onto-base-route-choices/" rel="noopener">Base bridge</a> background explains that route; it does not combine approvals across the two chains. Think of each chain as keeping its own permission slip for each token.</p>
+<p>Find USDC in the approval list and identify the spender, which is the contract allowed to move it. Read the allowance beside that spender. If it is zero, the contract has no remaining USDC allowance under that approval. A nonzero amount means it can still move USDC up to that limit; an unlimited allowance leaves no practical cap set by the approval.</p>
+<h2>How do you revoke the bridge spender’s approval?</h2>
+<p>To revoke the approval, send an approve transaction that sets the same spender’s USDC allowance to zero. Have the wallet address and ETH for gas on the chain being revoked ready. The steps start after USDC has already been bridged.</p>
+<ol>
+<li>Open Revoke.cash or the relevant explorer’s Token Approval Checker. Connect your wallet, or paste its public address.</li>
+<li>Select Ethereum or Base, matching the chain where you gave the approval. An Ethereum approval does not cover Base, so check both chains if you approved the bridge on each.</li>
+<li>Find the USDC entry for the bridge spender and inspect the allowance. If it already reads zero, stop here; there is nothing to revoke.</li>
+<li>For a remaining allowance, click Revoke for that spender and token. Confirm the approve-to-zero transaction in your wallet and pay the gas on the selected chain.</li>
+<li>Return to the approval list after the transaction completes. The task is done when the spender is no longer listed or its USDC allowance shows zero.</li>
+</ol>
+<p>Check before spending gas. When a bridge asked for the exact amount of USDC being transferred, the transfer may have consumed that allowance, leaving it at zero already. Revoking still costs gas, including Ethereum gas for an Ethereum approval. An unlimited allowance is more likely to be worth clearing because it leaves the contract authorized to move future USDC up to the approved limit. A bridge-back transfer can involve an approval on Base, so checking only Ethereum may miss it.</p>
+<h2>Related</h2>
+<h3>Does bridging ETH need a token approval?</h3>
+<p>ETH itself is not an ERC-20 token, so it does not use this ERC-20 approval process. A wrapped or other ERC-20 token used in a bridge flow can require an approval; check the token and chain shown in your wallet.</p>
+<h3>What is an unlimited token approval?</h3>
+<p>An unlimited token approval sets a very high allowance so the approved contract can move the token without asking for a new approval each time. You can revoke it by resetting that token and spender allowance to zero on the chain where you granted it.</p></div>
+</article>
+<aside class="s6de751b s3902b05">
+  <h2 class="s7eddf27">Related stories</h2>
+  <ul class="s0b5af0e">
+    <li><a href="/difference-between-price-impact-and-slippage-in-a-swap/">Difference Between Price Impact and Slippage in a Swap</a></li>
+    <li><a href="/eu-proposes-sanctions-on-russian-banks-and-crypto-networks/">EU proposes sanctions on Russian banks and crypto networks</a></li>
+    <li><a href="/eu-proposes-crypto-sanctions-in-22nd-russia-package/">EU proposes crypto sanctions in 22nd Russia package</a></li>
+    <li><a href="/how-to-use-syncswap-safely-with-a-wallet-you-control/">How to use SyncSwap safely with a wallet you control</a></li>
+  </ul>
+</aside>
+</main>
+
+<footer class="sb625620">
+  <div class="s388aca7">
+    <p class="s78192ca">Merkle Street</p>
+    <nav class="s4ecffcd" aria-label="Site">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/archive/">Archive</a></li>
+        <li><a href="/how-we-report/">How we report</a></li>
+      </ul>
+    </nav>
+    <p class="s9bc40df">News and analysis for information, not financial advice.</p>
+    <p class="sdd2c799">© 2026 Merkle Street</p>
+  </div>
+</footer>
+</body>
+</html>
